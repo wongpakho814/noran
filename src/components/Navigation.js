@@ -5,41 +5,52 @@ function Navigation({ currentPage, handlePageChange }) {
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
-          href="#about"
-          onClick={() => handlePageChange("About")}
+          href="#home"
+          onClick={() => handlePageChange("Home")}
           // If the current page is "Home", we set the current page to 'nav-link-active', otherwise 'nav-link'
-          className={currentPage === "About" ? "nav-link active" : "nav-link"}
+          className={currentPage === "Home" ? "nav-link active" : "nav-link"}
         >
-          About Me
+          Services <i className="fa-solid fa-chevron-down"></i>
         </a>
       </li>
       <li className="nav-item">
         <a
-          href="#portfolio"
-          onClick={() => handlePageChange("Portfolio")}
+          href="#learn"
+          onClick={() => handlePageChange("Learn")}
+          className={currentPage === "Learn" ? "nav-link active" : "nav-link"}
+        >
+          Learn <i className="fa-solid fa-chevron-down"></i>
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#social-impact"
+          onClick={() => handlePageChange("SocialImpact")}
           className={
-            currentPage === "Portfolio" ? "nav-link active" : "nav-link"
+            currentPage === "SocialImpact" ? "nav-link active" : "nav-link"
           }
         >
-          Portfolio
+          Social Impact
         </a>
       </li>
       <li className="nav-item">
         <a
-          href="#contact"
-          onClick={() => handlePageChange("Contact")}
-          className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
+          href="#projects"
+          onClick={() => handlePageChange("Projects")}
+          className={
+            currentPage === "Projects" ? "nav-link active" : "nav-link"
+          }
         >
-          Contact Me
+          Projects
         </a>
       </li>
       <li className="nav-item">
         <a
-          href="#resume"
-          onClick={() => handlePageChange("Resume")}
-          className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
+          href="#about"
+          onClick={() => handlePageChange("About")}
+          className={currentPage === "About" ? "nav-link active" : "nav-link"}
         >
-          Resume
+          About Noran
         </a>
       </li>
     </ul>
