@@ -74,7 +74,7 @@ html {
 }
 
 .cta-heading span {
-  color: #457d61;  
+  color: #457d61;
 }
 
 .cta-box-column {
@@ -237,6 +237,77 @@ header {
   align-items: flex-start;
   gap: 1rem;
   margin-left: 3.6rem;
+}
+
+.slack-box {
+  height: 32rem;
+}
+
+.slack-box-outer-wrapper {
+  position: relative;
+  width: 39.4667rem;
+  height: 32rem;
+  flex-shrink: 0;
+  border-radius: 3.2rem;
+  background: var(--mid-bg, #f4f4f4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 101;
+}
+
+.slack-box-inner-wrapper {
+  width: 33rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.slack-logo {
+  width: 14.9854rem;
+  height: 4rem;
+}
+
+.slack-heading,
+.slack-text {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.slack-heading h3 {
+  color: var(--text, #333);
+  font-size: 2rem;
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3rem;
+}
+
+.slack-text p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--text, #333);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.slack-btn {
+  display: flex;
+  padding: 1.2rem 2.4rem;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 7rem;
+  border: 0.1rem solid var(--primary, #457d61);
+  background: var(--light-bg, #fcfcfc);
+}
+
+.slack-box .blob {
+  transform: translate(-9rem, -40rem);
 }
 /* End of navbar */
 /* End of header */

@@ -7,6 +7,7 @@ import bookIcon from "../images/icons/📖.svg";
 import globeIcon from "../images/icons/🌐.svg";
 import houseIcon from "../images/icons/🏫.svg";
 import lightBulbIcon from "../images/icons/💡.svg";
+import slackLogo from "../images/Slack-Logo-2019-present_1.png";
 
 function Navigation({ currentPage, handlePageChange }) {
   const handleMouseOver = (event) => {
@@ -99,30 +100,30 @@ function Navigation({ currentPage, handlePageChange }) {
           Learn <i className="fa-solid fa-chevron-down"></i>
         </a>
         <div className="nav-dropdown-wrapper">
-          <ul className="nav-dropdown nav-dropdown-about-us">
-            <li className="nav-dropdown-item">
-              <h3>
-                <img src={computerIcon} alt="UX Design & DesignOps"></img>
-                <span>UX Design & DesignOps</span>
-              </h3>
-              <p>Tagline</p>
-            </li>
-            <li className="nav-dropdown-item">
-              <h3>
-                <img src={searchIcon} alt="Website / UI Audit"></img>
-                <span>Website / UI Audit</span>
-              </h3>
-              <p>Tagline</p>
-            </li>
-            <li className="nav-dropdown-item">
-              <h3>
-                <img src={chatIcon} alt="Consulting"></img>
-                <span>Consulting</span>
-              </h3>
-              <p>Tagline</p>
-            </li>
-          </ul>
-          <CtaBox />
+          <div className="slack-box">
+            <div className="slack-box-outer-wrapper">
+              <div className="slack-box-inner-wrapper">
+                <img
+                  className="slack-logo"
+                  src={slackLogo}
+                  alt="Slack logo"
+                ></img>
+                <div className="slack-heading">
+                  <h3>Join our community.</h3>
+                </div>
+                <div className="slack-text">
+                  <p>
+                    Meet aspiring individuals in the tech industry around the
+                    world, and stay updated to the industry trends while
+                    learning important topics like Generative AI and UX
+                    Inclusivity!
+                  </p>
+                </div>
+                <button className="slack-btn">Let's talk</button>
+              </div>
+            </div>
+            <div className="blob"></div>
+          </div>
         </div>
       </li>
 
