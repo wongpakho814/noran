@@ -4,7 +4,7 @@ function ctaBox() {
   return (
     <div className="cta-box">
       <div className="cta-box-column">
-        <div className="cta-heading">Work with us.</div>
+        <div className="cta-heading">Work with us<span>.</span></div>
         <div className="cta-box-btn">
           <button className="lets-talk-btn">Let's talk</button>
           <button className="join-community-btn">Join the community</button>

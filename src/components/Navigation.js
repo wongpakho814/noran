@@ -9,15 +9,15 @@ import houseIcon from "../images/icons/🏫.svg";
 import lightBulbIcon from "../images/icons/💡.svg";
 
 function Navigation({ currentPage, handlePageChange }) {
-  const showServices = () => {
-    const service = document.querySelector(".service-dropdown-wrapper");
-    if (service.classList.contains("isShown")) {
-      service.style.cssText = "opacity: 0; visibility: hidden;";
-      service.classList.remove("isShown");
-    } else {
-      service.style.cssText = "opacity: 1; visibility: visible;";
-      service.classList.add("isShown");
-    }
+  const handleMouseOver = (event) => {
+    event.currentTarget.parentElement.lastElementChild.style.cssText =
+      "opacity: 1; visibility: visible;";
+  };
+
+  const handleMouseOut = (event) => {
+    console.log(event.target.parentElement);
+    event.currentTarget.parentElement.lastElementChild.style.cssText =
+      "opacity: 0; visibility: hidden;";
   };
 
   return (
@@ -25,13 +25,14 @@ function Navigation({ currentPage, handlePageChange }) {
       <li className="nav-list-item">
         <a
           href="#home"
-          onClick={() => showServices()}
           // If the current page is "Home", we set the current page to 'nav-link-active', otherwise 'nav-link'
           className={currentPage === "Home" ? "nav-link active" : "nav-link"}
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
         >
           Services <i className="fa-solid fa-chevron-down"></i>
         </a>
-        <div className="nav-dropdown-wrapper service-dropdown-wrapper isShown">
+        <div className="nav-dropdown-wrapper">
           <ul className="nav-dropdown nav-dropdown-about-us">
             <li className="nav-dropdown-item">
               <h3>
@@ -90,11 +91,39 @@ function Navigation({ currentPage, handlePageChange }) {
       <li className="nav-list-item">
         <a
           href="#learn"
-          onClick={() => handlePageChange("Learn")}
+          //   onClick={() => showDropdown("learn")}
           className={currentPage === "Learn" ? "nav-link active" : "nav-link"}
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
         >
           Learn <i className="fa-solid fa-chevron-down"></i>
         </a>
+        <div className="nav-dropdown-wrapper">
+          <ul className="nav-dropdown nav-dropdown-about-us">
+            <li className="nav-dropdown-item">
+              <h3>
+                <img src={computerIcon} alt="UX Design & DesignOps"></img>
+                <span>UX Design & DesignOps</span>
+              </h3>
+              <p>Tagline</p>
+            </li>
+            <li className="nav-dropdown-item">
+              <h3>
+                <img src={searchIcon} alt="Website / UI Audit"></img>
+                <span>Website / UI Audit</span>
+              </h3>
+              <p>Tagline</p>
+            </li>
+            <li className="nav-dropdown-item">
+              <h3>
+                <img src={chatIcon} alt="Consulting"></img>
+                <span>Consulting</span>
+              </h3>
+              <p>Tagline</p>
+            </li>
+          </ul>
+          <CtaBox />
+        </div>
       </li>
 
       <li className="nav-list-item">
