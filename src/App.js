@@ -1,8 +1,8 @@
 import './App.css';
-import PortfolioContainer from "./components/PortfolioContainer";
+import Container from "./components/Container";
 
 function App() {
-  return <PortfolioContainer />;
+  return <Container />;
 }
 
 export default App;

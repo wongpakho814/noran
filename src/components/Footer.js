@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../images/Noran logo.svg";
+import CtaBox from "./ctaBox";
 
 function Footer() {
   return (
@@ -88,21 +89,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="footer-box">
-          <div className="footer-box-column">
-            <div className="footer-heading">Work with us.</div>
-            <div className="footer-box-cta">
-              <button className="lets-talk-btn">Let's talk</button>
-              <button className="join-community-btn">Join the community</button>
-            </div>
-            <div className="footer-text">
-              Are you a social enterprise or a charity? You’ll be able to get a
-              positive impact discount as a thank you for all your hard work to
-              the society!
-            </div>
-          </div>
-          <div className="blob"></div>
-        </div>
+        <CtaBox />
       </div>
 
       <div className="footer-bottom">
