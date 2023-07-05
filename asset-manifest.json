@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.86dd6b47.css",
+    "main.js": "/static/js/main.27fc20d1.js",
+    "static/media/🌐.svg": "/static/media/🌐.a6ebf30d4e1f0f9565827584d5c6191c.svg",
+    "static/media/📖.svg": "/static/media/📖.7f04f72bf352fb663c87cc7e2b4afaa4.svg",
+    "static/media/🏫.svg": "/static/media/🏫.afa18014886156cdf13e65ed7cf5c1cc.svg",
+    "static/media/🔍.svg": "/static/media/🔍.6919ad3eb5bae8fb578a6b782058d123.svg",
+    "static/media/💬️.svg": "/static/media/💬️.ef0c208bda70c030fd1dbf30b11bb729.svg",
+    "static/media/💡.svg": "/static/media/💡.1ee6fc6b701c15dc2c3d4a4a5574fec9.svg",
+    "static/media/Noran logo.svg": "/static/media/Noran logo.05e63049775c4613c672d0506bf7d628.svg",
+    "static/media/🖥️.svg": "/static/media/🖥️.6cb710e77e92b9ee22d9acf33e70cf6f.svg",
+    "index.html": "/index.html",
+    "static/media/blob.svg": "/static/media/blob.dfb3e6c20281cc2f2440.svg",
+    "main.86dd6b47.css.map": "/static/css/main.86dd6b47.css.map",
+    "main.27fc20d1.js.map": "/static/js/main.27fc20d1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86dd6b47.css",
+    "static/js/main.27fc20d1.js"
+  ]
+}
