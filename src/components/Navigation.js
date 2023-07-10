@@ -8,17 +8,25 @@ import globeIcon from "../images/icons/🌐.svg";
 import houseIcon from "../images/icons/🏫.svg";
 import lightBulbIcon from "../images/icons/💡.svg";
 import slackLogo from "../images/Slack-Logo-2019-present_1.png";
+import udemyLogo from "../images/Udemy_Logo_3280x1712-scaled_1.png";
 
 function Navigation({ currentPage, handlePageChange }) {
-  const handleMouseOver = (event) => {
+  const handleMouseOverAnchor = (event) => {
     event.currentTarget.parentElement.lastElementChild.style.cssText =
       "opacity: 1; visibility: visible;";
   };
 
-  const handleMouseOut = (event) => {
-    console.log(event.target.parentElement);
+  const handleMouseOverDiv = (event) => {
+    event.currentTarget.style.cssText = "opacity: 1; visibility: visible;";
+  };
+
+  const handleMouseOutAnchor = (event) => {
     event.currentTarget.parentElement.lastElementChild.style.cssText =
       "opacity: 0; visibility: hidden;";
+  };
+
+  const handleMouseOutDiv = (event) => {
+    event.currentTarget.style.cssText = "opacity: 0; visibility: hidden;";
   };
 
   return (
@@ -28,12 +36,16 @@ function Navigation({ currentPage, handlePageChange }) {
           href="#home"
           // If the current page is "Home", we set the current page to 'nav-link-active', otherwise 'nav-link'
           className={currentPage === "Home" ? "nav-link active" : "nav-link"}
-          onMouseOver={handleMouseOver}
-          onMouseOut={handleMouseOut}
+          onMouseOver={handleMouseOverAnchor}
+          onMouseOut={handleMouseOutAnchor}
         >
           Services <i className="fa-solid fa-chevron-down"></i>
         </a>
-        <div className="nav-dropdown-wrapper">
+        <div
+          className="nav-dropdown-wrapper"
+          onMouseOver={handleMouseOverDiv}
+          onMouseOut={handleMouseOutDiv}
+        >
           <ul className="nav-dropdown nav-dropdown-about-us">
             <li className="nav-dropdown-item">
               <h3>
@@ -94,12 +106,16 @@ function Navigation({ currentPage, handlePageChange }) {
           href="#learn"
           //   onClick={() => showDropdown("learn")}
           className={currentPage === "Learn" ? "nav-link active" : "nav-link"}
-          onMouseOver={handleMouseOver}
-          onMouseOut={handleMouseOut}
+          onMouseOver={handleMouseOverAnchor}
+          onMouseOut={handleMouseOutAnchor}
         >
           Learn <i className="fa-solid fa-chevron-down"></i>
         </a>
-        <div className="nav-dropdown-wrapper">
+        <div
+          className="nav-dropdown-wrapper"
+          onMouseOver={handleMouseOverDiv}
+          onMouseOut={handleMouseOutDiv}
+        >
           <div className="slack-box">
             <div className="slack-box-outer-wrapper">
               <div className="slack-box-inner-wrapper">
@@ -119,10 +135,45 @@ function Navigation({ currentPage, handlePageChange }) {
                     Inclusivity!
                   </p>
                 </div>
-                <button className="slack-btn">Let's talk</button>
+                <button className="slack-btn">Meet the network</button>
               </div>
             </div>
             <div className="blob"></div>
+          </div>
+
+          <div className="udemy-box">
+            <div className="udemy-box-outer-wrapper">
+              <div className="udemy-box-inner-wrapper">
+                <img
+                  className="udemy-logo"
+                  src={udemyLogo}
+                  alt="Udemy logo"
+                ></img>
+                <div className="udemy-heading">
+                  <h3>Free DesignOps course.</h3>
+                </div>
+                <div className="udemy-text">
+                  <p>
+                    Learn from Expedia Group’s product leader to enhance your
+                    team’s design workflow under an hour! You’ll even get a free
+                    practical handbook to guide your process step-by-step!
+                  </p>
+                </div>
+                <button className="udemy-btn">Start learning</button>
+              </div>
+            </div>
+            <div className="blob"></div>
+          </div>
+
+          <div className="latest-industry-insights">
+            <div className="latest-industry-insights-wrapper">
+              <h3>
+                Latest industry insights<span>.</span>
+              </h3>
+              <p>Comprehensive Guide to Inclusive UX Design</p>
+              <p>Comprehensive Guide to Accessible UX Design</p>
+              <p>Comprehensive Guide to Sustainable UX Design</p>
+            </div>
           </div>
         </div>
       </li>

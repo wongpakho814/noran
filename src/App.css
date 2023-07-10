@@ -181,7 +181,7 @@ header {
   padding: 0 10rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   background: var(--light-bg, #fcfcfc);
   opacity: 0;
   z-index: 100;
@@ -239,11 +239,17 @@ header {
   margin-left: 3.6rem;
 }
 
-.slack-box {
+.slack-box,
+.udemy-box {
+  position: relative;
+  width: 39.467rem;
   height: 32rem;
+  border-radius: 3.2rem;
+  overflow: hidden;
 }
 
-.slack-box-outer-wrapper {
+.slack-box-outer-wrapper,
+.udemy-box-outer-wrapper {
   position: relative;
   width: 39.4667rem;
   height: 32rem;
@@ -253,15 +259,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 101;
 }
 
-.slack-box-inner-wrapper {
+.slack-box-inner-wrapper,
+.udemy-box-inner-wrapper {
   width: 33rem;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   gap: 1.6rem;
+  z-index: 101;
 }
 
 .slack-logo {
@@ -269,14 +276,22 @@ header {
   height: 4rem;
 }
 
+.udemy-logo {
+  width: 10.5rem;
+  height: 4rem;
+}
+
 .slack-heading,
-.slack-text {
+.udemy-heading,
+.slack-text,
+.udemy-text {
   display: flex;
   align-items: flex-start;
   align-self: stretch;
 }
 
-.slack-heading h3 {
+.slack-heading h3,
+.udemy-heading h3 {
   color: var(--text, #333);
   font-size: 2rem;
   font-family: Outfit;
@@ -285,7 +300,8 @@ header {
   line-height: 3rem;
 }
 
-.slack-text p {
+.slack-text p,
+.udemy-text p {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -295,7 +311,8 @@ header {
   line-height: 2rem;
 }
 
-.slack-btn {
+.slack-btn,
+.udemy-btn {
   display: flex;
   padding: 1.2rem 2.4rem;
   justify-content: flex-end;
@@ -304,10 +321,50 @@ header {
   border-radius: 7rem;
   border: 0.1rem solid var(--primary, #457d61);
   background: var(--light-bg, #fcfcfc);
+  color: var(--primary, #457d61);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2rem;
 }
 
-.slack-box .blob {
-  transform: translate(-9rem, -40rem);
+.slack-box .blob,
+.udemy-box .blob {
+  transform: translate(-11rem, -47rem);
+}
+
+.latest-industry-insights {
+  width: 39.467rem;
+  height: 17.4rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.latest-industry-insights-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.latest-industry-insights-wrapper h3 {
+  color: var(--text, #333);
+  font-family: Outfit;
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+
+.latest-industry-insights-wrapper h3 span {
+  color: var(--primary, #457d61);
+}
+
+.latest-industry-insights-wrapper p {
+  color: var(--text, #333);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
 }
 /* End of navbar */
 /* End of header */
