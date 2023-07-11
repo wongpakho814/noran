@@ -1,7 +1,11 @@
 {
   "files": {
-    "main.css": "/noran/static/css/main.c2c5927b.css",
-    "main.js": "/noran/static/js/main.878ccba6.js",
+    "main.css": "/noran/static/css/main.6d252ea9.css",
+    "main.js": "/noran/static/js/main.ece0ef84.js",
+    "static/media/Frame 14177.png": "/noran/static/media/Frame 14177.d0d5499cd005aee4a2be.png",
+    "static/media/Frame 14176.png": "/noran/static/media/Frame 14176.6162c1e5a2c9bcba0876.png",
+    "static/media/earth highlight emoji.png": "/noran/static/media/earth highlight emoji.c9287fdaca39c6a7c54f.png",
+    "static/media/leaf highlight emoji.png": "/noran/static/media/leaf highlight emoji.bb3692cc10eba705be16.png",
     "static/media/Infinite Rotation.svg": "/noran/static/media/Infinite Rotation.86a84b94133dc9363466.svg",
     "static/media/🌐.svg": "/noran/static/media/🌐.d6f7157b925ec4cf21cf6b975f430fd0.svg",
     "static/media/📖.svg": "/noran/static/media/📖.3e22c6af38c2c948333ad2267d75b5d3.svg",
@@ -13,11 +17,11 @@
     "static/media/🖥️.svg": "/noran/static/media/🖥️.9bba94678c924609b96d319fb1e4720e.svg",
     "index.html": "/noran/index.html",
     "static/media/blob.svg": "/noran/static/media/blob.eddfecaea7efbf6ca87d.svg",
-    "main.c2c5927b.css.map": "/noran/static/css/main.c2c5927b.css.map",
-    "main.878ccba6.js.map": "/noran/static/js/main.878ccba6.js.map"
+    "main.6d252ea9.css.map": "/noran/static/css/main.6d252ea9.css.map",
+    "main.ece0ef84.js.map": "/noran/static/js/main.ece0ef84.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2c5927b.css",
-    "static/js/main.878ccba6.js"
+    "static/css/main.6d252ea9.css",
+    "static/js/main.ece0ef84.js"
   ]
 }
