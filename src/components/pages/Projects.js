@@ -2,7 +2,7 @@ import React from "react";
 
 function Projects() {
   return (
-    <section id="resume">
+    <section id="projects">
       <div>
         <h2>
           Download my resume <a href="#resume">here</a>!

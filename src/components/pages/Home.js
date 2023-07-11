@@ -1,8 +1,12 @@
 import React from "react";
+import InfiniteRotation from "../InfiniteRotation";
 
 function Home() {
   return (
-    <section id="about-me">
+    <section className="home-section-1" id="home">
+      <div className="home-section-1-content-wrapper">
+        <InfiniteRotation />
+      </div>
     </section>
   );
 }

@@ -18,7 +18,7 @@ export default function PortfolioContainer() {
     if (currentPage === "Learn") {
         return <Learn />;
     }
-    if (currentPage === "Social Impact") {
+    if (currentPage === "SocialImpact") {
       return <SocialImpact />;
     }
     if (currentPage === "Projects") {

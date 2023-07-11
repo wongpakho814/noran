@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <section id="about-me">
+    <section id="about">
       <h2>About Me</h2>
       <p>
         Hey there! My name is Pak Ho Wong and I am a fresh graduate from the

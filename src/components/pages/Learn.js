@@ -2,7 +2,7 @@ import React from "react";
 
 function Learn() {
   return (
-    <section id="portfolio-container">
+    <section id="learn">
       <h2>Previous Work</h2>
       <section id="previous-work">
         <div>

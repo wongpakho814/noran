@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../images/Noran logo.svg";
-import CtaBox from "./ctaBox";
+import CtaBox from "./CtaBox";
 
 function Footer() {
   return (

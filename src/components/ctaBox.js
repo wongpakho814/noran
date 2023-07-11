@@ -1,6 +1,6 @@
 import React from "react";
 
-function ctaBox() {
+function CtaBox() {
   return (
     <div className="cta-box">
       <div className="cta-box-column">
@@ -20,4 +20,4 @@ function ctaBox() {
   );
 }
 
-export default ctaBox;
+export default CtaBox;

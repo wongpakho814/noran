@@ -1,5 +1,5 @@
 import React from "react";
-import CtaBox from "./ctaBox";
+import CtaBox from "./CtaBox";
 import computerIcon from "../images/icons/🖥️.svg";
 import searchIcon from "../images/icons/🔍.svg";
 import chatIcon from "../images/icons/💬️.svg";
@@ -36,6 +36,7 @@ function Navigation({ currentPage, handlePageChange }) {
           href="#home"
           // If the current page is "Home", we set the current page to 'nav-link-active', otherwise 'nav-link'
           className={currentPage === "Home" ? "nav-link active" : "nav-link"}
+          onClick={() => handlePageChange("Home")}
           onMouseOver={handleMouseOverAnchor}
           onMouseOut={handleMouseOutAnchor}
         >
@@ -104,8 +105,8 @@ function Navigation({ currentPage, handlePageChange }) {
       <li className="nav-list-item">
         <a
           href="#learn"
-          //   onClick={() => showDropdown("learn")}
           className={currentPage === "Learn" ? "nav-link active" : "nav-link"}
+          onClick={() => handlePageChange("Learn")}
           onMouseOver={handleMouseOverAnchor}
           onMouseOut={handleMouseOutAnchor}
         >
