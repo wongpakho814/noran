@@ -407,6 +407,7 @@ header {
 /* End of header */
 
 /* Home page */
+/* Home page section 1 */
 .home-section-1 {
   width: 100%;
   height: 70.8rem;
@@ -501,7 +502,7 @@ header {
   height: 37.3rem;
   position: absolute;
   border-radius: 2.4rem;
-  z-index: 100;
+  z-index: 10;
 }
 
 .home-section-1-image-1 {
@@ -529,6 +530,129 @@ header {
   stroke-width: 0.3rem;
   stroke: var(--secondary, #d6ebdc);
 }
+/* End of home page section 1 */
+
+/* Home page section 2 */
+.home-section-2 {
+  width: 100%;
+  height: 62.346rem;
+  display: flex;
+  padding: 0 6.4rem 6.4rem 6.4rem;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 11rem 0;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.home-section-2-content-wrapper {
+  width: 131.2rem;
+  height: 55.946rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.home-section-2-interactive {
+  width: 60.8rem;
+  height: 55.9465rem;
+  position: relative;
+}
+
+.home-section-2-interactive-card:nth-child(odd) {
+  background: var(--mid-bg, #f4f4f4);
+}
+
+.home-section-2-interactive-card:nth-child(even) {
+  background: var(--secondary, #d6ebdc);
+}
+
+.home-section-2-interactive-card {
+  position: absolute;
+  display: flex;
+  width: 20rem;
+  height: 20rem;
+  padding: 2.4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30rem;
+  gap: 2.4rem;
+}
+
+.home-section-2-interactive-card-1 {
+  top: 11.9rem;
+  left: 40.8rem;
+  bottom: 24rem;
+}
+
+.home-section-2-interactive-card-2 {
+  top: 16.3rem;
+  left: 8.3rem;
+  bottom: 19.6rem;
+  right: 32.5rem;
+  z-index: 10;
+}
+
+.home-section-2-interactive-card-3 {
+  top: 35.9rem;
+  right: 40.8rem;
+}
+
+.home-section-2-interactive-card-4 {
+  top: 31rem;
+  left: 23.2rem;
+  bottom: 4.91rem;
+  right: 17.6rem;
+}
+
+.home-section-2-interactive-card-5 {
+  top: 34.5rem;
+  left: 40.2rem;
+  bottom: 1.4rem;
+  right: 0.6rem;
+}
+
+.home-section-2-interactive-card-6 {
+  top: 2.55rem;
+  left: 23.2rem;
+  bottom: 33.4rem;
+  right: 17.6rem;
+}
+
+.home-section-2-interactive-card-7 {
+  left: 0.7rem;
+  bottom: 35.9rem;
+  right: 40.1rem;
+}
+
+.home-section-2-interactive-card-emoji {
+  display: flex;
+  width: 6rem;
+  height: 6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-section-2-interactive-card-emoji img {
+  width: 6rem;
+}
+
+.home-section-2-interactive-card p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  align-self: stretch;
+  color: var(--text, #333);
+  text-align: center;
+  font-family: Outfit;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/* End of home page section 2 */
 /* End of home page */
 
 /* Footer */
