@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/noran/static/css/main.6d252ea9.css",
-    "main.js": "/noran/static/js/main.ece0ef84.js",
+    "main.css": "/noran/static/css/main.9b91e910.css",
+    "main.js": "/noran/static/js/main.725ff026.js",
     "static/media/Frame 14177.png": "/noran/static/media/Frame 14177.d0d5499cd005aee4a2be.png",
     "static/media/Frame 14176.png": "/noran/static/media/Frame 14176.6162c1e5a2c9bcba0876.png",
     "static/media/earth highlight emoji.png": "/noran/static/media/earth highlight emoji.c9287fdaca39c6a7c54f.png",
@@ -17,11 +17,11 @@
     "static/media/🖥️.svg": "/noran/static/media/🖥️.9bba94678c924609b96d319fb1e4720e.svg",
     "index.html": "/noran/index.html",
     "static/media/blob.svg": "/noran/static/media/blob.eddfecaea7efbf6ca87d.svg",
-    "main.6d252ea9.css.map": "/noran/static/css/main.6d252ea9.css.map",
-    "main.ece0ef84.js.map": "/noran/static/js/main.ece0ef84.js.map"
+    "main.9b91e910.css.map": "/noran/static/css/main.9b91e910.css.map",
+    "main.725ff026.js.map": "/noran/static/js/main.725ff026.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d252ea9.css",
-    "static/js/main.ece0ef84.js"
+    "static/css/main.9b91e910.css",
+    "static/js/main.725ff026.js"
   ]
 }
