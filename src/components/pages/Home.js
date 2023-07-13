@@ -153,6 +153,20 @@ function Home() {
               <p>UX Design & DesignOps</p>
             </div>
           </div>
+
+          <div className="home-section-2-text-content">
+            <InfiniteRotation />
+            <h2>
+              Elevate your brand with heart<span>.</span>
+            </h2>
+            <p>
+              Whether you’re seeking quick wins or a complete strategy makeover,
+              we’re here for you. As a collaborative partner who listen, ask,
+              learn, and gathers insights to put together plans with your
+              success in mind.
+            </p>
+            <div className="lets-talk-btn">Our Services</div>
+          </div>
         </div>
       </section>
     </React.Fragment>
