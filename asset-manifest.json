@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/noran/static/css/main.554907b7.css",
-    "main.js": "/noran/static/js/main.3b058af5.js",
+    "main.css": "/noran/static/css/main.e573d3ef.css",
+    "main.js": "/noran/static/js/main.867b06cc.js",
     "static/media/hero-img-plant.png": "/noran/static/media/hero-img-plant.6be4570c6fead651527b.png",
     "static/media/Frame 14177.png": "/noran/static/media/Frame 14177.d0d5499cd005aee4a2be.png",
     "static/media/Frame 14176.png": "/noran/static/media/Frame 14176.6162c1e5a2c9bcba0876.png",
@@ -24,11 +24,11 @@
     "index.html": "/noran/index.html",
     "static/media/blob.svg": "/noran/static/media/blob.eddfecaea7efbf6ca87d.svg",
     "static/media/blob2.svg": "/noran/static/media/blob2.a72eda6438263d4b4ced.svg",
-    "main.554907b7.css.map": "/noran/static/css/main.554907b7.css.map",
-    "main.3b058af5.js.map": "/noran/static/js/main.3b058af5.js.map"
+    "main.e573d3ef.css.map": "/noran/static/css/main.e573d3ef.css.map",
+    "main.867b06cc.js.map": "/noran/static/js/main.867b06cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.554907b7.css",
-    "static/js/main.3b058af5.js"
+    "static/css/main.e573d3ef.css",
+    "static/js/main.867b06cc.js"
   ]
 }
