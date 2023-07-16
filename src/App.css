@@ -927,7 +927,6 @@ header {
 }
 
 .home-section-4-arrows {
-  width: 9.1647rem;
   height: 4.1rem;
 }
 /* End of home section 3 */
@@ -1060,6 +1059,7 @@ footer {
   padding: 3.2rem 6.4rem;
   justify-content: space-between;
   align-items: center;
+  white-space: nowrap;
 }
 
 .copyright {
@@ -1348,11 +1348,31 @@ footer {
   html {
     font-size: 40%;
   }
+
+  .infinite-rotation-wrapper,
+  .infinite-rotation {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .home-section-3-hero-text {
+    top: 20rem;
+  }
+
+  .home-section-3-card {
+    top: 60rem;
+  }
 }
 
 @media screen and (max-width: 450px) {
   html {
     font-size: 35%;
+  }
+
+  .infinite-rotation-wrapper,
+  .infinite-rotation {
+    width: 18rem;
+    height: 18rem;
   }
 
   .home-section-2-text-content {
@@ -1361,12 +1381,20 @@ footer {
     justify-content: space-evenly;
   }
 
+  .home-section-3 {
+    height: 120rem;
+  }
+
   .home-section-3-hero {
     height: 70rem;
   }
 
+  .home-section-3-hero-text {
+    top: 23rem;
+  }
+
   .home-section-3-card {
-    top: 60rem;
+    top: 65rem;
   }
 }
 
@@ -1411,11 +1439,23 @@ footer {
   .home-section-2-interactive-card-6 {
     left: 20.2rem;
   }
+
+  .home-section-3-hero .blob {
+    transform: translate(-27rem, -20rem);
+  }
 }
 
 @media screen and (max-width: 330px) {
+  .home-section-3 {
+    height: 130rem;
+  }
+
+  .home-section-3-hero {
+    height: 80rem;
+  }
+
   .home-section-3-card {
-    top: 67rem;
+    top: 75rem;
   }
 
   .home-section-2-interactive {
