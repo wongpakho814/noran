@@ -246,7 +246,7 @@ function Home() {
 
       <section className="home-section-4">
         <div className="home-section-4-text">
-          <h1>Our clients stay with us.</h1>
+          <h1>Our clients stay with us<span>.</span></h1>
           <p>
             We’ve worked (and still working!) with an AI-driven virtual
             assistant platform for NHS hospitals, the world’s first AI
