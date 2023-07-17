@@ -16,7 +16,7 @@ export default function PortfolioContainer() {
       return <Home />;
     }
     if (currentPage === "Learn") {
-        return <Learn />;
+      return <Learn />;
     }
     if (currentPage === "SocialImpact") {
       return <SocialImpact />;
@@ -31,12 +31,9 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-      <Header
-        currentPage={currentPage}
-        handlePageChange={handlePageChange}
-      /> 
-      {renderPage()} 
-      <Footer /> 
+      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      {renderPage()}
+      <Footer />
     </div>
   );
 }

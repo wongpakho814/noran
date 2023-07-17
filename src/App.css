@@ -21,6 +21,7 @@ html {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  cursor: pointer;
 }
 
 .logo {
@@ -36,6 +37,15 @@ html {
   background: var(--primary, #457d61);
 }
 /* End of logo */
+
+/* Header buttons */
+.header-btns {
+  display: flex;
+  width: auto;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.6rem;
+}
 
 .lets-talk-btn {
   display: flex;
@@ -53,6 +63,18 @@ html {
   white-space: nowrap;
   cursor: pointer;
 }
+
+.hamburger-btn {
+  display: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url("./images/hamburger-btn.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* End of header buttons */
 
 /* CTA box */
 .cta-box {
@@ -202,6 +224,11 @@ header {
   align-items: center;
   gap: 0.8rem;
   white-space: nowrap;
+  cursor: pointer;
+}
+
+.nav-list-item:last-child {
+  display: flex;
 }
 
 .nav-list-item a {
@@ -225,14 +252,12 @@ header {
   top: 8rem;
   left: 0;
   padding: 0 10rem;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   background: var(--light-bg, #fcfcfc);
-  opacity: 0;
   z-index: 100;
-  visibility: hidden;
-  transition: all 0.5s;
+  cursor: auto;
 }
 
 .nav-dropdown-wrapper .cta-box {
@@ -245,7 +270,7 @@ header {
   flex-wrap: wrap;
 }
 
-.nav-dropdown-about-us {
+.nav-dropdown-services {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -338,6 +363,11 @@ header {
   align-items: flex-start;
 }
 
+.slack-text,
+.udemy-text {
+  white-space: break-spaces;
+}
+
 .slack-heading h3,
 .udemy-heading h3 {
   color: var(--text, #333);
@@ -381,7 +411,7 @@ header {
 }
 
 .latest-industry-insights {
-  width: 39.467rem;
+  width: max-content;
   height: 17.4rem;
   display: flex;
   align-items: center;
@@ -413,6 +443,28 @@ header {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2rem;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 /* End of navbar */
 /* End of header */
@@ -1148,6 +1200,18 @@ footer {
     gap: 0.8rem;
   }
 
+  .slack-box,
+  .udemy-box,
+  .slack-box-outer-wrapper,
+  .udemy-box-outer-wrapper {
+    width: 28.8rem;
+  }
+
+  .slack-box-inner-wrapper,
+  .udemy-box-inner-wrapper {
+    width: 25.6rem;
+  }
+
   .home-section-1 {
     height: auto;
   }
@@ -1230,6 +1294,10 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
+  .nav-dropdown-wrapper {
+    padding: 0 5rem;
+  }
+
   .home-section-2-text-content p {
     text-align: initial;
   }
@@ -1318,7 +1386,16 @@ footer {
     justify-content: space-between;
   }
 
+  .header-btns {
+    width: 19.35rem;
+  }
+
+  .hamburger-btn {
+    display: block;
+  }
+
   .nav-list {
+    display: none;
     width: 100%;
     position: absolute;
     top: 8.8rem;
@@ -1326,10 +1403,153 @@ footer {
     padding: 0 5rem 0 5rem;
     transform: translateX(-50%);
     flex-direction: column;
+    background: #fff;
+    z-index: 200;
   }
 
-  .home-section-1 {
-    margin-top: 35rem;
+  .nav-list-item {
+    height: max-content;
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav-list-item i {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+  }
+
+  .nav-dropdown-wrapper {
+    position: unset;
+    padding: 0;
+    background-color: #fff;
+  }
+
+  .nav-dropdown-services {
+    margin-bottom: 0;
+  }
+
+  .nav-dropdown-wrapper .cta-box {
+    display: none;
+  }
+
+  .nav-dropdown {
+    width: 100%;
+    position: relative;
+    left: 5rem;
+  }
+
+  .nav-dropdown-wrapper-learn {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 3rem;
+  }
+
+  .slack-box,
+  .udemy-box {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    overflow: visible;
+  }
+
+  .slack-box-outer-wrapper,
+  .slack-box-inner-wrapper,
+  .udemy-box-outer-wrapper,
+  .udemy-box-inner-wrapper {
+    all: unset;
+  }
+
+  .slack-box-header,
+  .udemy-box-header {
+    display: flex;
+    height: 2.4rem;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  .slack-logo {
+    width: 7.4rem;
+    height: 2rem;
+  }
+
+  .udemy-logo {
+    width: 5.3rem;
+    height: 2rem;
+  }
+
+  .slack-heading h3,
+  .udemy-heading h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 3rem;
+    margin-bottom: 0;
+  }
+
+  .slack-heading span,
+  .udemy-heading span {
+    color: #457d61;
+  }
+
+  .slack-text,
+  .udemy-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .slack-text p,
+  .udemy-text p {
+    color: var(--sub-text, #677489);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .slack-btn,
+  .slack-box .blob,
+  .udemy-btn,
+  .udemy-box .blob {
+    display: none;
+  }
+
+  .latest-industry-insights,
+  .latest-industry-insights-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .latest-industry-insights {
+    height: max-content;
+  }
+
+  .latest-industry-insights-wrapper {
+    gap: 0.2rem;
+  }
+
+  .latest-industry-insights-header {
+    display: flex;
+    height: 2.4rem;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  .latest-industry-insights-header h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 3rem;
+  }
+
+  .latest-industry-insights-wrapper p {
+    margin-bottom: 0;
   }
 
   .home-section-3-hero-img-wrapper {
@@ -1345,11 +1565,30 @@ footer {
     top: 35rem;
     right: -0.4rem;
   }
+
+  .home-section-4-text p {
+    text-align: initial;
+  }
 }
 
 @media screen and (max-width: 800px) {
   html {
     font-size: 55%;
+  }
+
+  .nav-dropdown-wrapper,
+  .nav-dropdown-services {
+    height: max-content;
+  }
+
+  .nav-dropdown-wrapper {
+    justify-content: center;
+    padding-top: 4rem;
+  }
+
+  .nav-dropdown-services {
+    width: max-content;
+    left: unset;
   }
 
   .home-section-1-content p {
@@ -1404,6 +1643,56 @@ footer {
     height: 14rem;
   }
 
+  .nav-list-item a {
+    font-size: 2.4rem;
+  }
+
+  .nav-list-item i {
+    top: 3rem;
+  }
+
+  .nav-dropdown-item h3 {
+    font-size: 2.5rem;
+  }
+
+  .nav-dropdown-item p {
+    margin-left: 4.5rem;
+    font-size: 1.6rem;
+  }
+
+  .slack-logo {
+    width: 10.36rem;
+    height: 2.8rem;
+  }
+
+  .udemy-logo {
+    width: 7.42rem;
+    height: 2.8rem;
+  }
+
+  .slack-heading h3,
+  .udemy-heading h3 {
+    font-size: 2.4rem;
+  }
+
+  .slack-text,
+  .udemy-text {
+    margin-top: 0.7rem;
+  }
+
+  .slack-text p,
+  .udemy-text p {
+    font-size: 2rem;
+  }
+
+  .latest-industry-insights-header h3 {
+    font-size: 2.4rem;
+  }
+
+  .latest-industry-insights-wrapper p {
+    font-size: 2rem;
+  }
+
   .home-section-2-text-content button,
   .home-section-3-hero-text button,
   .home-section-4-text button {
@@ -1421,6 +1710,10 @@ footer {
     left: 3.2rem;
     align-items: center;
     text-align: center;
+  }
+
+  .home-section-3-hero-text p {
+    text-align: initial;
   }
 
   .home-section-3-hero-img-wrapper {

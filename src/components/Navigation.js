@@ -12,42 +12,83 @@ import udemyLogo from "../images/Udemy_Logo_3280x1712-scaled_1.png";
 
 function Navigation({ currentPage, handlePageChange }) {
   const handleMouseOverAnchor = (event) => {
-    event.currentTarget.parentElement.lastElementChild.style.cssText =
-      "opacity: 1; visibility: visible;";
+    event.currentTarget.lastElementChild.style.cssText =
+      "display: flex; animation: fade-in 0.3s forwards;";
+    event.currentTarget.firstElementChild.nextElementSibling.style.cssText =
+      "transform: rotateX(180deg); transition: transform 0.3s;";
   };
 
   const handleMouseOverDiv = (event) => {
-    event.currentTarget.style.cssText = "opacity: 1; visibility: visible;";
+    event.currentTarget.style.cssText =
+      "display: flex; animation: fade-in 0.3s forwards;";
   };
 
   const handleMouseOutAnchor = (event) => {
-    event.currentTarget.parentElement.lastElementChild.style.cssText =
-      "opacity: 0; visibility: hidden;";
+    event.currentTarget.lastElementChild.style.cssText =
+      "display: flex; animation: fade-out 0.3s forwards;";
+    event.currentTarget.firstElementChild.nextElementSibling.style.cssText =
+      "transform: rotateX(0deg); transition: transform 0.3s;";
   };
 
   const handleMouseOutDiv = (event) => {
-    event.currentTarget.style.cssText = "opacity: 0; visibility: hidden;";
+    event.currentTarget.style.cssText =
+      "display: flex; animation: fade-out 0.3s forwards;";
   };
+
+  const handleOnClickAnchor = (event) => {
+    if (event.currentTarget.lastElementChild.style.display === "flex") {
+      event.currentTarget.lastElementChild.style.cssText =
+        "display: none; animation: fade-out 0.3s forwards;";
+      event.currentTarget.firstElementChild.nextElementSibling.style.cssText =
+        "transform: rotateX(0deg); transition: transform 0.3s;";
+    } else {
+      event.currentTarget.lastElementChild.style.cssText =
+        "display: flex; animation: fade-in 0.3s forwards;";
+      event.currentTarget.firstElementChild.nextElementSibling.style.cssText =
+        "transform: rotateX(180deg); transition: transform 0.3s;";
+    }
+  };
+
+  document.addEventListener("animationstart", function (e) {
+    if (e.animationName === "fade-in") {
+      e.target.classList.add("did-fade-in");
+    }
+  });
+
+  document.addEventListener("animationend", function (e) {
+    if (e.animationName === "fade-out") {
+      e.target.classList.remove("did-fade-in");
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    window.location.reload();
+  });
 
   return (
     <ul className="nav-list">
-      <li className="nav-list-item">
+      <li
+        className="nav-list-item"
+        onMouseOver={window.innerWidth > 1000 ? handleMouseOverAnchor : null}
+        onMouseOut={window.innerWidth > 1000 ? handleMouseOutAnchor : null}
+        onClick={window.innerWidth <= 1000 ? handleOnClickAnchor : null}
+      >
         <a
           href="#home"
           // If the current page is "Home", we set the current page to 'nav-link-active', otherwise 'nav-link'
           className={currentPage === "Home" ? "nav-link active" : "nav-link"}
           onClick={() => handlePageChange("Home")}
-          onMouseOver={handleMouseOverAnchor}
-          onMouseOut={handleMouseOutAnchor}
         >
-          Services <i className="fa-solid fa-chevron-down"></i>
+          Services
         </a>
+        <i className="fa-solid fa-chevron-down"></i>
+
         <div
           className="nav-dropdown-wrapper"
-          onMouseOver={handleMouseOverDiv}
-          onMouseOut={handleMouseOutDiv}
+          onMouseOver={window.innerWidth > 1000 ? handleMouseOverDiv : null}
+          onMouseOut={window.innerWidth > 1000 ? handleMouseOutDiv : null}
         >
-          <ul className="nav-dropdown nav-dropdown-about-us">
+          <ul className="nav-dropdown nav-dropdown-services">
             <li className="nav-dropdown-item">
               <h3>
                 <img src={computerIcon} alt="UX Design & DesignOps"></img>
@@ -102,32 +143,42 @@ function Navigation({ currentPage, handlePageChange }) {
         </div>
       </li>
 
-      <li className="nav-list-item">
+      <li
+        className="nav-list-item"
+        onMouseOver={window.innerWidth > 1000 ? handleMouseOverAnchor : null}
+        onMouseOut={window.innerWidth > 1000 ? handleMouseOutAnchor : null}
+        onClick={window.innerWidth <= 1000 ? handleOnClickAnchor : null}
+      >
         <a
           href="#learn"
           className={currentPage === "Learn" ? "nav-link active" : "nav-link"}
           onClick={() => handlePageChange("Learn")}
-          onMouseOver={handleMouseOverAnchor}
-          onMouseOut={handleMouseOutAnchor}
         >
-          Learn <i className="fa-solid fa-chevron-down"></i>
+          Learn
         </a>
+        <i className="fa-solid fa-chevron-down"></i>
+
         <div
-          className="nav-dropdown-wrapper"
-          onMouseOver={handleMouseOverDiv}
-          onMouseOut={handleMouseOutDiv}
+          className="nav-dropdown-wrapper nav-dropdown-wrapper-learn"
+          onMouseOver={window.innerWidth > 1000 ? handleMouseOverDiv : null}
+          onMouseOut={window.innerWidth > 1000 ? handleMouseOutDiv : null}
         >
           <div className="slack-box">
             <div className="slack-box-outer-wrapper">
               <div className="slack-box-inner-wrapper">
-                <img
-                  className="slack-logo"
-                  src={slackLogo}
-                  alt="Slack logo"
-                ></img>
-                <div className="slack-heading">
-                  <h3>Join our community.</h3>
+                <div className="slack-box-header">
+                  <img
+                    className="slack-logo"
+                    src={slackLogo}
+                    alt="Slack logo"
+                  ></img>
+                  <div className="slack-heading">
+                    <h3>
+                      Join our community<span>.</span>
+                    </h3>
+                  </div>
                 </div>
+
                 <div className="slack-text">
                   <p>
                     Meet aspiring individuals in the tech industry around the
@@ -145,14 +196,19 @@ function Navigation({ currentPage, handlePageChange }) {
           <div className="udemy-box">
             <div className="udemy-box-outer-wrapper">
               <div className="udemy-box-inner-wrapper">
-                <img
-                  className="udemy-logo"
-                  src={udemyLogo}
-                  alt="Udemy logo"
-                ></img>
-                <div className="udemy-heading">
-                  <h3>Free DesignOps course.</h3>
+                <div className="udemy-box-header">
+                  <img
+                    className="udemy-logo"
+                    src={udemyLogo}
+                    alt="Udemy logo"
+                  ></img>
+                  <div className="udemy-heading">
+                    <h3>
+                      Free DesignOps course<span>.</span>
+                    </h3>
+                  </div>
                 </div>
+
                 <div className="udemy-text">
                   <p>
                     Learn from Expedia Group’s product leader to enhance your
@@ -168,9 +224,11 @@ function Navigation({ currentPage, handlePageChange }) {
 
           <div className="latest-industry-insights">
             <div className="latest-industry-insights-wrapper">
-              <h3>
-                Latest industry insights<span>.</span>
-              </h3>
+              <div className="latest-industry-insights-header">
+                <h3>
+                  Latest industry insights<span>.</span>
+                </h3>
+              </div>
               <p>Comprehensive Guide to Inclusive UX Design</p>
               <p>Comprehensive Guide to Accessible UX Design</p>
               <p>Comprehensive Guide to Sustainable UX Design</p>
