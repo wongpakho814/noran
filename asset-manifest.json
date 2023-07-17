@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/noran/static/css/main.e573d3ef.css",
-    "main.js": "/noran/static/js/main.867b06cc.js",
+    "main.css": "/noran/static/css/main.f5518150.css",
+    "main.js": "/noran/static/js/main.3a0c5347.js",
     "static/media/hero-img-plant.png": "/noran/static/media/hero-img-plant.6be4570c6fead651527b.png",
     "static/media/Frame 14177.png": "/noran/static/media/Frame 14177.d0d5499cd005aee4a2be.png",
     "static/media/Frame 14176.png": "/noran/static/media/Frame 14176.6162c1e5a2c9bcba0876.png",
@@ -23,12 +23,13 @@
     "static/media/🖥️.svg": "/noran/static/media/🖥️.9bba94678c924609b96d319fb1e4720e.svg",
     "index.html": "/noran/index.html",
     "static/media/blob.svg": "/noran/static/media/blob.eddfecaea7efbf6ca87d.svg",
+    "static/media/hamburger-btn.svg": "/noran/static/media/hamburger-btn.aab5eea63b6772649e77.svg",
     "static/media/blob2.svg": "/noran/static/media/blob2.a72eda6438263d4b4ced.svg",
-    "main.e573d3ef.css.map": "/noran/static/css/main.e573d3ef.css.map",
-    "main.867b06cc.js.map": "/noran/static/js/main.867b06cc.js.map"
+    "main.f5518150.css.map": "/noran/static/css/main.f5518150.css.map",
+    "main.3a0c5347.js.map": "/noran/static/js/main.3a0c5347.js.map"
   },
   "entrypoints": [
-    "static/css/main.e573d3ef.css",
-    "static/js/main.867b06cc.js"
+    "static/css/main.f5518150.css",
+    "static/js/main.3a0c5347.js"
   ]
 }
