@@ -208,7 +208,7 @@ html {
 }
 
 .swiper-slide-active {
-  background-color: #fff;  
+  background-color: #fff;
 }
 /* End of swiper */
 /* End of reset and common styles */
@@ -1925,6 +1925,22 @@ footer {
   .social-impact-section-3-left-column p {
     text-align: initial;
   }
+
+  .about-section-1 {
+    height: 147rem;
+  }
+
+  .about-section-1-cards {
+    height: max-content;
+  }
+
+  .about-section-1-highlight-wrapper {
+    flex-direction: column;
+  }
+
+  .about-section-2 {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -2098,6 +2114,18 @@ footer {
     width: 2.5rem;
   }
 
+  .about-section-1 {
+    height: 159rem;
+  }
+
+  #about-section-1-highlight-emoji-1,
+  #about-section-1-highlight-emoji-2,
+  #about-section-1-highlight-emoji-3,
+  #about-section-1-highlight-emoji-4 {
+    width: max-content;
+    height: 11rem;
+  }
+
   .footer-area-1 .cta-heading {
     font-size: 3rem;
   }
@@ -2136,6 +2164,17 @@ footer {
 
   .social-impact-section-2 {
     margin-top: 5rem;
+  }
+
+  .about-section-1 {
+    height: 163rem;
+  }
+
+  #about-section-1-highlight-emoji-1,
+  #about-section-1-highlight-emoji-2,
+  #about-section-1-highlight-emoji-3,
+  #about-section-1-highlight-emoji-4 {
+    height: 12rem;
   }
 }
 
@@ -2207,6 +2246,17 @@ footer {
     width: 3.1rem;
   }
 
+  .about-section-1 {
+    height: 171rem;
+  }
+
+  #about-section-1-highlight-emoji-1,
+  #about-section-1-highlight-emoji-2,
+  #about-section-1-highlight-emoji-3,
+  #about-section-1-highlight-emoji-4 {
+    height: 14rem;
+  }
+
   .footer-item a {
     font-size: 2rem;
   }
@@ -2269,6 +2319,10 @@ footer {
   .icon-wrapper i {
     width: 2.5rem;
   }
+
+  .about-section-1-cards {
+    top: 60rem;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -2285,8 +2339,7 @@ footer {
 
 @media screen and (max-width: 330px) {
   .home-section-3,
-  .social-impact-section-1,
-  .about-section-1 {
+  .social-impact-section-1 {
     height: 130rem;
   }
 
@@ -2308,6 +2361,14 @@ footer {
 
   .home-section-3-card {
     top: 80rem;
+  }
+
+  .about-section-1-content-wrapper .home-section-3-hero-text {
+    text-align: start;
+  }
+
+  .about-section-1-cards {
+    top: 65rem;
   }
 }
 /* End of responsiveness */
