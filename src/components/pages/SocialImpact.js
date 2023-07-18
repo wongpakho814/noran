@@ -25,9 +25,6 @@ function SocialImpact() {
                 contributing to environmental conservation and supporting
                 organisations that drive positive social change.
               </p>
-              <button className="lets-talk-btn our-social-commitment">
-                Our social commitment
-              </button>
             </div>
             <div className="blob"></div>
             <div className="home-section-3-hero-img-wrapper">
