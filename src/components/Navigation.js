@@ -235,7 +235,9 @@ function Navigation() {
       </li>
 
       <li className="nav-list-item">
-        <p>About Noran</p>
+        <a href="about" className="nav-link">
+          About Noran
+        </a>
       </li>
     </ul>
   );

@@ -215,7 +215,7 @@ function Home() {
 
             <div className="home-section-3-card-highlight">
               <div className="home-section-3-highlight-emoji">
-                <img src={forkIcon} alt="25K+ trees planted"></img>
+                <img src={forkIcon} alt="4K+ meals shared"></img>
               </div>
               <div className="home-section-3-highlight-text">
                 <h2>4K+ meals</h2>
@@ -225,7 +225,10 @@ function Home() {
 
             <div className="home-section-3-card-highlight">
               <div className="home-section-3-highlight-emoji">
-                <img src={waterDropIcon} alt="25K+ trees planted"></img>
+                <img
+                  src={waterDropIcon}
+                  alt="USD$1.3K+ donated for clean water"
+                ></img>
               </div>
               <div className="home-section-3-highlight-text">
                 <h2>USD$1.3K+</h2>
@@ -235,7 +238,7 @@ function Home() {
 
             <div className="home-section-3-card-highlight">
               <div className="home-section-3-highlight-emoji">
-                <img src={heartIcon} alt="25K+ trees planted"></img>
+                <img src={heartIcon} alt="Charities supporting for free"></img>
               </div>
               <div className="home-section-3-highlight-text">
                 <h2>Charities</h2>

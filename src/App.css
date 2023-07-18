@@ -764,7 +764,8 @@ header {
 
 /* Home section 3 */
 .home-section-3,
-.social-impact-section-1 {
+.social-impact-section-1,
+.about-section-1 {
   width: 100%;
   padding: 6.4rem 6.4rem 0 6.4rem;
   display: flex;
@@ -856,7 +857,8 @@ header {
   right: -1.4rem;
 }
 
-.home-section-3-card {
+.home-section-3-card,
+.about-section-1-cards {
   width: 100%;
   height: 11rem;
   padding: 2.4rem 4.8rem;
@@ -1215,6 +1217,102 @@ header {
 /* End of social impact section 3 */
 /* End of social impact */
 
+/* About Noran */
+/* About noran section 1 */
+.about-section-1 {
+  width: 100%;
+  height: 102rem;
+  padding: 6.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-section-1-content-wrapper {
+  height: 100%;
+}
+
+.about-section-1-cards {
+  height: 27.1rem;
+  flex-direction: column;
+}
+
+.about-section-1-cards h2 {
+  color: var(--text, #333);
+  text-align: center;
+  font-family: Outfit;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3rem;
+}
+
+.about-section-1-cards h2 span {
+  color: #457d61;
+}
+
+.about-section-1-highlight-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.6rem;
+}
+
+.about-section-1-card-highlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+#about-section-1-highlight-emoji-1 {
+  width: 6.2933rem;
+  height: 8rem;
+}
+
+#about-section-1-highlight-emoji-2 {
+  width: 14.019rem;
+  height: 8rem;
+}
+
+#about-section-1-highlight-emoji-3 {
+  width: 5.5427rem;
+  height: 8rem;
+}
+
+#about-section-1-highlight-emoji-4 {
+  width: 22.6rem;
+  height: 8rem;
+}
+
+.about-section-1-highlight-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.about-section-1-highlight-text h2 {
+  font-size: 1.8rem;
+  line-height: normal;
+}
+
+.about-section-1-highlight-text p {
+  color: var(--text, #333);
+  text-align: center;
+  font-family: Outfit;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* End of about noran section 1 */
+/* End of about noran */
+
 /* Footer */
 footer {
   display: flex;
@@ -1498,7 +1596,8 @@ footer {
 
 @media screen and (max-width: 1300px) {
   .home-section-3,
-  .social-impact-section-1 {
+  .social-impact-section-1,
+  .about-section-1 {
     height: 110rem;
   }
 
@@ -1537,7 +1636,7 @@ footer {
 }
 
 @media screen and (max-width: 1100px) {
-  .home-section-4, 
+  .home-section-4,
   .social-impact-section-3 {
     height: auto;
     flex-direction: column;
@@ -1545,7 +1644,7 @@ footer {
 
   .home-section-4-text,
   .social-impact-section-3-left-column,
-  .home-section-4-card, 
+  .home-section-4-card,
   .social-impact-section-3-right-column {
     width: 100%;
     align-items: center;
@@ -2055,7 +2154,8 @@ footer {
   }
 
   .home-section-3,
-  .social-impact-section-1 {
+  .social-impact-section-1,
+  .about-section-1 {
     height: 120rem;
   }
 
@@ -2166,7 +2266,8 @@ footer {
 
 @media screen and (max-width: 330px) {
   .home-section-3,
-  .social-impact-section-1 {
+  .social-impact-section-1,
+  .about-section-1 {
     height: 130rem;
   }
 
