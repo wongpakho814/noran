@@ -207,12 +207,8 @@ html {
   align-items: center;
 }
 
-.swiper-slide:first-child .prev-btn {
-  display: none;
-}
-
-.swiper-slide:last-child .next-btn {
-  display: none;
+.swiper-slide-active {
+  background-color: #fff;  
 }
 /* End of swiper */
 /* End of reset and common styles */
@@ -1019,7 +1015,7 @@ header {
 .home-section-4-arrows {
   width: 15rem;
   height: 4.1rem;
-  margin-top: 2rem;
+  margin-top: 2.4rem;
   margin-left: auto;
   display: flex;
   align-items: center;
@@ -1179,6 +1175,10 @@ header {
   line-height: 120%;
 }
 
+.social-impact-section-3-right-column p {
+  margin-bottom: 2.4rem;
+}
+
 .social-impact-section-3-right-column a {
   color: var(--primary, #457d61);
   font-weight: 500;
@@ -1190,6 +1190,7 @@ header {
   display: flex;
   align-items: center;
   gap: 2.4rem;
+  margin-bottom: 2.4rem;
 }
 
 .social-impact-section-3-client img {
@@ -1310,6 +1311,24 @@ header {
   line-height: normal;
 }
 
+.about-section-2 {
+  width: 100%;
+  display: flex;
+  padding: 6.4rem;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 4rem;
+  background: var(--white, #fff);
+}
+
+.about-section-2-member-info h3 {
+  color: var(--text, #333);
+  font-family: Outfit;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
 /* End of about noran section 1 */
 /* End of about noran */
 

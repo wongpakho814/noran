@@ -1,5 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCards } from "swiper/modules";
 import InfiniteRotation from "../InfiniteRotation";
 import CharityPartner from "../CharityPartner";
 import heroImg from "../../images/hero-img-plant.png";
@@ -151,6 +152,7 @@ function SocialImpact() {
           className="social-impact-section-3-right-column"
           spaceBetween={50}
           slidesPerView={1}
+          loop={true}
         >
           <SwiperSlide>
             <CharityPartner

@@ -268,6 +268,7 @@ function Home() {
           className="home-section-4-card"
           spaceBetween={50}
           slidesPerView={1}
+          loop={true}
         >
           <SwiperSlide>
             <CustomerTestimonial
