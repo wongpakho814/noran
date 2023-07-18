@@ -10,7 +10,7 @@ import lightBulbIcon from "../images/icons/💡.svg";
 import slackLogo from "../images/Slack-Logo-2019-present_1.png";
 import udemyLogo from "../images/Udemy_Logo_3280x1712-scaled_1.png";
 
-function Navigation({ currentPage, handlePageChange, renderPage }) {
+function Navigation() {
   const handleMouseOverAnchor = (event) => {
     event.currentTarget.lastElementChild.style.cssText =
       "display: flex; animation: fade-in 0.3s forwards;";
@@ -225,12 +225,7 @@ function Navigation({ currentPage, handlePageChange, renderPage }) {
       </li>
 
       <li className="nav-list-item">
-        <a
-          href="social-impact"
-          className={
-            currentPage === "SocialImpact" ? "nav-link active" : "nav-link"
-          }
-        >
+        <a href="social-impact" className="nav-link">
           Social Impact
         </a>
       </li>

@@ -748,7 +748,7 @@ header {
 /* End of home page section 2 */
 
 /* Home section 3 */
-.home-section-3, 
+.home-section-3,
 .social-impact-section-1 {
   width: 100%;
   padding: 6.4rem 6.4rem 0 6.4rem;
@@ -1033,9 +1033,86 @@ header {
 /* End of home page */
 
 /* Social Impact */
-/* Social impact section 1 */
+/* Social impact section 2 */
+.social-impact-section-2 {
+  display: flex;
+  padding: 0 6.4rem 6.4rem 6.4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
 
-/* End of social impact section1  */
+.social-impact-section-2 h1 {
+  width: 100%;
+  color: var(--text, #333);
+  font-family: Outfit;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.048rem;
+}
+
+.social-impact-section-2 h1 span {
+  color: #457d61;
+}
+
+.social-impact-section-2-insights {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 1.6rem;
+}
+
+.social-impact-section-2-insight-card {
+  width: 33%;
+  display: flex;
+  padding: 2.4rem;
+  align-items: center;
+  gap: 2.4rem;
+  border-radius: 1.6rem;
+  background: var(--mid-bg, #f4f4f4);
+}
+
+.social-impact-section-2-insight-card:nth-child(even) {
+  background: var(--secondary, #d6ebdc);
+}
+
+.social-impact-section-2-insight-card-emoji {
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-impact-section-2-insight-card-emoji img {
+  width: 4rem;
+}
+
+.social-impact-section-2-insight-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.social-impact-section-2-insight-card-content h3,
+.social-impact-section-2-insight-card-content p {
+  color: var(--text, #333);
+  font-family: Outfit;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.social-impact-section-2-insight-card-content p {
+  font-weight: 400;
+}
+/* End of social impact section 2 */
 /* End of social impact */
 
 /* Footer */
@@ -1310,7 +1387,7 @@ footer {
 }
 
 @media screen and (max-width: 1300px) {
-  .home-section-3, 
+  .home-section-3,
   .social-impact-section-1 {
     height: 110rem;
   }
@@ -1966,7 +2043,7 @@ footer {
 }
 
 @media screen and (max-width: 330px) {
-  .home-section-3, 
+  .home-section-3,
   .social-impact-section-1 {
     height: 130rem;
   }

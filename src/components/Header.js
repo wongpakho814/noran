@@ -2,7 +2,7 @@ import React from "react";
 import Navigation from "./Navigation";
 import logo from "../images/Noran logo.svg";
 
-function Header({ currentPage, handlePageChange }) {
+function Header() {
   const handleOnClickMenu = () => {
     if (document.querySelector(".nav-list").style.animationName === "fade-out")
       document.querySelector(".nav-list").style.cssText =
@@ -20,10 +20,7 @@ function Header({ currentPage, handlePageChange }) {
         <div className="logo-square"></div>
       </a>
       <nav>
-        <Navigation
-          currentPage={currentPage}
-          handlePageChange={handlePageChange}
-        />
+        <Navigation />
       </nav>
       <div className="header-btns">
         <button className="lets-talk-btn">Let's talk</button>
