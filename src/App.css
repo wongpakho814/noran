@@ -200,6 +200,21 @@ html {
   }
 }
 /* End of infinite rotation */
+
+/* Swiper */
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide:first-child .prev-btn {
+  display: none;
+}
+
+.swiper-slide:last-child .next-btn {
+  display: none;
+}
+/* End of swiper */
 /* End of reset and common styles */
 
 /* Header */
@@ -941,19 +956,6 @@ header {
   line-height: 150%;
 }
 
-.swiper-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.swiper-slide:first-child .prev-btn {
-  display: none;
-}
-
-.swiper-slide:last-child .next-btn {
-  display: none;
-}
-
 .home-section-4-card {
   display: flex !important;
   width: 58.7rem;
@@ -1113,6 +1115,102 @@ header {
   font-weight: 400;
 }
 /* End of social impact section 2 */
+
+/* Social impact section 3 */
+.social-impact-section-3 {
+  width: 100%;
+  display: flex;
+  padding: 6.4rem;
+  align-items: center;
+  justify-content: space-evenly;
+  background: var(--white, #fff);
+}
+
+.social-impact-section-3-left-column {
+  width: 68.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.2rem;
+}
+
+.social-impact-section-3-left-column h1,
+.social-impact-section-3-left-column p {
+  color: var(--text, #333);
+  font-family: Outfit;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.048rem;
+}
+
+.social-impact-section-3-left-column p {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.social-impact-section-3-right-column {
+  display: flex !important;
+  width: 58.7rem;
+  padding: 4rem 2.4rem !important;
+  margin: 0 !important;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.4rem;
+  border-radius: 3.2rem;
+  border: 0.1rem solid var(--text, #333);
+  background: var(--white, #fff);
+}
+
+.social-impact-section-3-right-column p,
+.social-impact-section-3-right-column a {
+  color: var(--text, #333);
+  font-family: Outfit;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.social-impact-section-3-right-column a {
+  color: var(--primary, #457d61);
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.social-impact-section-3-client {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.social-impact-section-3-client img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1.6rem;
+}
+
+.social-impact-section-3-client-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.social-impact-section-3-client-info h1 {
+  color: var(--text, #333);
+  font-family: Outfit;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+/* End of social impact section 3 */
 /* End of social impact */
 
 /* Footer */

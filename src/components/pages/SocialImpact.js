@@ -1,5 +1,7 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import InfiniteRotation from "../InfiniteRotation";
+import CharityPartner from "../CharityPartner";
 import heroImg from "../../images/hero-img-plant.png";
 import treeIcon from "../../images/icons/🌲.svg";
 import forkIcon from "../../images/icons/🍴.svg";
@@ -131,6 +133,47 @@ function SocialImpact() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="social-impact-section-3">
+        <div className="social-impact-section-3-left-column">
+          <h1>Our charity partners.</h1>
+          <p>
+            These are the charities that we’re constantly providing our free
+            design solutions to, and we couldn’t have done it without the
+            support from our corporate clients! By working with us, you can
+            receive high-quality services while contribute to this positive
+            impact - a win-win solution.
+          </p>
+          <button className="lets-talk-btn">Work with us</button>
+        </div>
+        <Swiper
+          className="social-impact-section-3-right-column"
+          spaceBetween={50}
+          slidesPerView={1}
+        >
+          <SwiperSlide>
+            <CharityPartner
+              name={"ADHD Aware"}
+              industry={"A neurodiversity charity based in Brighton, UK."}
+              text={
+                "ADHD Aware is a national charity based in Brighton which has been supporting ADHD adults for almost a decade. It provides monthly peer support groups, both in person and online, for ADHD adults, their partners and for parents of ADHD children or young adults."
+              }
+              index={"avatar1"}
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <CharityPartner
+              name={"East and Central Brighton Primary Care Network"}
+              industry={"A healthcare charity based in Brighton, UK."}
+              text={
+                "9 GP practices have joined the East and Central Brighton Primary Care Network, to build on current primary care services and enable greater provision of proactive, personalised, coordinated and more integrated health and social care."
+              }
+              index={"avatar2"}
+            />
+          </SwiperSlide>
+        </Swiper>
       </section>
     </React.Fragment>
   );
