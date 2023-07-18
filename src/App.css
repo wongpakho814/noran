@@ -1920,8 +1920,16 @@ footer {
     left: 20.2rem;
   }
 
+  .home-section-3-hero {
+    height: 80rem;
+  }
+
   .home-section-3-hero .blob {
     transform: translate(-27rem, -20rem);
+  }
+
+  .home-section-3-card {
+    top: 70rem;
   }
 
   .icon-wrapper i {
@@ -1932,6 +1940,12 @@ footer {
 @media screen and (max-width: 350px) {
   .home-section-2 {
     margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .home-section-3-card {
+    top: 75rem;
   }
 }
 
@@ -1950,6 +1964,14 @@ footer {
 
   .home-section-2-interactive {
     left: -5rem;
+  }
+
+  .home-section-3-hero {
+    height: 85rem;
+  }
+
+  .home-section-3-card {
+    top: 80rem;
   }
 }
 /* End of responsiveness */
