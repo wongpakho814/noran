@@ -1,7 +1,6 @@
 {
   "name": "noran",
   "version": "0.1.0",
-  "homepage": "https://wongpakho814.github.io/noran/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -10,7 +9,7 @@
     "axios": "^1.2.3",
     "bootstrap": "^4.4.1",
     "dotenv": "^16.0.3",
-    "gh-pages": "^5.0.0",
+    "firebase": "^10.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^17.0.2",
