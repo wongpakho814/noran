@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import Home from "./pages/Home";
@@ -31,9 +32,22 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
-      <Footer />
+      <BrowserRouter basename="/">
+        <Header
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+          renderPage={renderPage}
+        />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/learn" element={<Learn />} />
+          <Route path="/social-impact" element={<SocialImpact />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        {renderPage()}
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

@@ -15,10 +15,10 @@ function Header({ currentPage, handlePageChange }) {
 
   return (
     <header>
-      <div className="logo-wrapper" onClick={() => handlePageChange("Home")}>
+      <a className="logo-wrapper" href="/">
         <img className="logo" src={logo} alt="Noran Design"></img>
         <div className="logo-square"></div>
-      </div>
+      </a>
       <nav>
         <Navigation
           currentPage={currentPage}

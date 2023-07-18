@@ -10,7 +10,7 @@ import lightBulbIcon from "../images/icons/💡.svg";
 import slackLogo from "../images/Slack-Logo-2019-present_1.png";
 import udemyLogo from "../images/Udemy_Logo_3280x1712-scaled_1.png";
 
-function Navigation({ currentPage, handlePageChange }) {
+function Navigation({ currentPage, handlePageChange, renderPage }) {
   const handleMouseOverAnchor = (event) => {
     event.currentTarget.lastElementChild.style.cssText =
       "display: flex; animation: fade-in 0.3s forwards;";
@@ -62,7 +62,7 @@ function Navigation({ currentPage, handlePageChange }) {
   });
 
   window.addEventListener("resize", () => {
-    window.location.reload();
+    window.location.reload(false);
   });
 
   return (
@@ -73,14 +73,7 @@ function Navigation({ currentPage, handlePageChange }) {
         onMouseOut={window.innerWidth > 1000 ? handleMouseOutAnchor : null}
         onClick={window.innerWidth <= 1000 ? handleOnClickAnchor : null}
       >
-        <a
-          href="#home"
-          // If the current page is "Home", we set the current page to 'nav-link-active', otherwise 'nav-link'
-          className={currentPage === "Home" ? "nav-link active" : "nav-link"}
-          onClick={() => handlePageChange("Home")}
-        >
-          Services
-        </a>
+        <p>Services</p>
         <i className="fa-solid fa-chevron-down"></i>
 
         <div
@@ -149,13 +142,7 @@ function Navigation({ currentPage, handlePageChange }) {
         onMouseOut={window.innerWidth > 1000 ? handleMouseOutAnchor : null}
         onClick={window.innerWidth <= 1000 ? handleOnClickAnchor : null}
       >
-        <a
-          href="#learn"
-          className={currentPage === "Learn" ? "nav-link active" : "nav-link"}
-          onClick={() => handlePageChange("Learn")}
-        >
-          Learn
-        </a>
+        <p>Learn</p>
         <i className="fa-solid fa-chevron-down"></i>
 
         <div
@@ -239,8 +226,7 @@ function Navigation({ currentPage, handlePageChange }) {
 
       <li className="nav-list-item">
         <a
-          href="#social-impact"
-          onClick={() => handlePageChange("SocialImpact")}
+          href="social-impact"
           className={
             currentPage === "SocialImpact" ? "nav-link active" : "nav-link"
           }
@@ -250,25 +236,11 @@ function Navigation({ currentPage, handlePageChange }) {
       </li>
 
       <li className="nav-list-item">
-        <a
-          href="#projects"
-          onClick={() => handlePageChange("Projects")}
-          className={
-            currentPage === "Projects" ? "nav-link active" : "nav-link"
-          }
-        >
-          Projects
-        </a>
+        <p>Projects</p>
       </li>
 
       <li className="nav-list-item">
-        <a
-          href="#about"
-          onClick={() => handlePageChange("About")}
-          className={currentPage === "About" ? "nav-link active" : "nav-link"}
-        >
-          About Noran
-        </a>
+        <p>About Noran</p>
       </li>
     </ul>
   );
