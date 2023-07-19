@@ -23,18 +23,18 @@ import heartIcon from "../../images/icons/💚.svg";
 function Home() {
   return (
     <React.Fragment>
-      <section className="home-section-1" id="home">
+      <section className="home-section-1 drop-in-2" id="home">
         <div className="home-section-1-content">
           <InfiniteRotation />
-          <h1>
+          <h1 className="drop-in-4">
             Your purpose-driven strategic partner<span>.</span>
           </h1>
-          <p>
+          <p className="drop-in-4">
             Our philosophy is to create impactful design solutions for
             businesses while design a better tomorrow for our society. Trust
             me... we’re nothing like what you’ve seen before.
           </p>
-          <div className="home-section-1-highlight-card">
+          <div className="home-section-1-highlight-card drop-in-5">
             <div className="home-section-1-highlight">
               <div className="home-section-1-highlight-emoji">
                 <img src={leafEmoji} alt="Supported 90+ brands"></img>
@@ -50,9 +50,17 @@ function Home() {
           </div>
         </div>
 
-        <div className="home-section-1-image-area">
-          <img className="home-section-1-image-1" src={image1} alt=""></img>
-          <img className="home-section-1-image-2" src={image2} alt=""></img>
+        <div className="home-section-1-image-area drop-in-5">
+          <img
+            className="home-section-1-image-1"
+            src={image1}
+            alt="Your purpose-driven strategic partner"
+          ></img>
+          <img
+            className="home-section-1-image-2"
+            src={image2}
+            alt="Your purpose-driven strategic partner"
+          ></img>
           <div className="home-section-1-waves">
             <div className="home-section-1-wave home-section-1-wave-1">
               <svg

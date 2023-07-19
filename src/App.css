@@ -68,7 +68,7 @@ html {
 
 .lets-talk-btn:hover {
   text-decoration: none;
-  color: #fff;  
+  color: #fff;
 }
 
 .hamburger-btn {
@@ -142,7 +142,7 @@ html {
 
 .join-community-btn:hover {
   text-decoration: none;
-  color: #457d61;  
+  color: #457d61;
 }
 
 .cta-text {
@@ -228,6 +228,47 @@ html {
   background-color: #fff;
 }
 /* End of swiper */
+
+/* Slide in animation on page load */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.drop-in {
+  animation: drop-in 1s ease 200ms backwards;
+}
+
+.drop-in-2 {
+  animation: drop-in 1.2s ease 500ms backwards;
+}
+
+.drop-in-3 {
+  animation: drop-in 1.4s ease 800ms backwards;
+}
+
+.drop-in-4 {
+  animation: drop-in 1.6s ease 1000ms backwards;
+}
+
+.drop-in-5 {
+  animation: drop-in 1.8s ease 1200ms backwards;
+}
+
+.drop-in-6 {
+  animation: drop-in 2s ease 1400ms backwards;
+}
+
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+/* End of slide in animation on page load */
 /* End of reset and common styles */
 
 /* Header */
@@ -444,7 +485,7 @@ header {
 }
 
 .slack-btn:hover {
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 .slack-box .blob,
@@ -520,7 +561,6 @@ header {
   padding: 6.4rem;
   justify-content: space-evenly;
   align-items: flex-start;
-  background: var(--white, #fff);
 }
 
 .home-section-1-content {
@@ -789,7 +829,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--white, #fff);
 }
 
 .home-section-3-content-wrapper {
@@ -1168,7 +1207,7 @@ header {
 }
 
 .social-impact-section-3-left-column h1 span {
-  color: #457d61;  
+  color: #457d61;
 }
 
 .social-impact-section-3-left-column p {
@@ -2127,7 +2166,7 @@ footer {
 
   .home-section-3-content-wrapper .infinite-rotation-wrapper {
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) !important;
   }
 
   .home-section-3-hero-text {

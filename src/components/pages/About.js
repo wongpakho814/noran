@@ -12,28 +12,31 @@ import TeamMember from "../TeamMember";
 function About() {
   return (
     <React.Fragment>
-      <section className="about-section-1" id="about">
+      <section className="about-section-1 drop-in-2" id="about">
         <div className="home-section-3-content-wrapper about-section-1-content-wrapper">
           <InfiniteRotation />
           <div className="home-section-3-hero">
             <div className="home-section-3-hero-text">
-              <h1>
+              <h1 className="drop-in-4">
                 About Noran<span>.</span>
               </h1>
-              <p>
+              <p className="drop-in-5">
                 WNoran is derived from “諾” (promise) and “然” (a state of
                 leisure). Our philosophy is to create impactful design solutions
                 for businesses while design a better tomorrow for our society.
               </p>
             </div>
             <div className="blob"></div>
-            <div className="home-section-3-hero-img-wrapper">
+            <div className="home-section-3-hero-img-wrapper drop-in-5">
               <img src={heroImg} alt="We strive for a better future"></img>
               <div className="blob2"></div>
             </div>
           </div>
 
-          <div className="about-section-1-cards">
+          <div
+            className="about-section-1-cards drop-in-5"
+            id="about-noran-awards"
+          >
             <h2>
               Our featured awards<span>.</span>
             </h2>

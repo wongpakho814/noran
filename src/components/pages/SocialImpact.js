@@ -13,28 +13,28 @@ import leafEmoji from "../../images/leaf highlight emoji.png";
 function SocialImpact() {
   return (
     <React.Fragment>
-      <section className="social-impact-section-1" id="social-impact">
+      <section className="social-impact-section-1 drop-in-2" id="social-impact">
         <div className="home-section-3-content-wrapper">
           <InfiniteRotation />
           <div className="home-section-3-hero">
             <div className="home-section-3-hero-text">
-              <h1>
+              <h1 className="drop-in-4">
                 We strive for a better future<span>.</span>
               </h1>
-              <p>
+              <p className="drop-in-5">
                 We are committed to making a tangible difference by actively
                 contributing to environmental conservation and supporting
                 organisations that drive positive social change.
               </p>
             </div>
             <div className="blob"></div>
-            <div className="home-section-3-hero-img-wrapper">
+            <div className="home-section-3-hero-img-wrapper drop-in-5">
               <img src={heroImg} alt="We strive for a better future"></img>
               <div className="blob2"></div>
             </div>
           </div>
 
-          <div className="home-section-3-card">
+          <div className="home-section-3-card drop-in-5">
             <div className="home-section-3-card-highlight">
               <div className="home-section-3-highlight-emoji">
                 <img src={treeIcon} alt="25K+ trees planted"></img>
@@ -81,7 +81,7 @@ function SocialImpact() {
         </div>
       </section>
 
-      <section className="social-impact-section-2">
+      <section className="social-impact-section-2" id="social-commitment">
         <h1>
           Our commitment<span>.</span>
         </h1>
@@ -136,7 +136,7 @@ function SocialImpact() {
         </div>
       </section>
 
-      <section className="social-impact-section-3">
+      <section className="social-impact-section-3" id="charity-partners">
         <div className="social-impact-section-3-left-column">
           <h1>
             Our charity partners<span>.</span>

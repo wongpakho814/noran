@@ -2,7 +2,7 @@ import React from "react";
 
 function InfiniteRotation() {
   return (
-    <div className="infinite-rotation-wrapper">
+    <div className="infinite-rotation-wrapper drop-in-3">
       <svg
         className="infinite-rotation-heart"
         xmlns="http://www.w3.org/2000/svg"

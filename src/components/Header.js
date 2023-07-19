@@ -14,7 +14,7 @@ function Header() {
   };
 
   return (
-    <header>
+    <header className="drop-in">
       <a className="logo-wrapper" href="/">
         <img className="logo" src={logo} alt="Noran Design"></img>
         <div className="logo-square"></div>

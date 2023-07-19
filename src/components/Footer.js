@@ -76,7 +76,13 @@ function Footer() {
               Resources<span>.</span>
             </div>
             <div className="footer-item">
-              <a href="#">Join Slack Community</a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://join.slack.com/t/norandesign/shared_invite/zt-1uesdmq4g-hjHLW6Eh~mWPy6Ir611oSQ"
+              >
+                Join Slack Community
+              </a>
             </div>
             <div className="footer-item">
               <a href="#">Free DesignOps Course on Udemy</a>
@@ -102,16 +108,16 @@ function Footer() {
               About<span>.</span>
             </div>
             <div className="footer-item">
-              <a href="#">About Noran</a>
+              <a href="/about">About Noran</a>
             </div>
             <div className="footer-item">
-              <a href="#">Our Awards & Recognitions</a>
+              <a href="/about#about-noran-awards">Our Awards & Recognitions</a>
             </div>
             <div className="footer-item">
-              <a href="#">Our Social Commitment</a>
+              <a href="/social-impact#social-commitment">Our Social Commitment</a>
             </div>
             <div className="footer-item">
-              <a href="#">Our Charity Partners</a>
+              <a href="/social-impact#charity-partners">Our Charity Partners</a>
             </div>
           </div>
         </div>
