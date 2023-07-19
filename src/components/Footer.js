@@ -13,15 +13,30 @@ function Footer() {
               <div className="logo-square"></div>
             </div>
             <div className="social-media">
-              <div className="icon-wrapper">
+              <a
+                className="icon-wrapper"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/company/noranstudio/"
+              >
                 <i className="fa-brands fa-linkedin"></i>
-              </div>
-              <div className="icon-wrapper">
+              </a>
+              <a
+                className="icon-wrapper"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.instagram.com/norandesign/"
+              >
                 <i className="fa-brands fa-instagram"></i>
-              </div>
-              <div className="icon-wrapper">
+              </a>
+              <a
+                className="icon-wrapper"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.youtube.com/channel/UCO44gy7NEBKebKovedrNPAQ"
+              >
                 <i className="fa-brands fa-youtube"></i>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -30,7 +45,9 @@ function Footer() {
 
         <div className="footer-area-2">
           <div className="footer-column">
-            <div className="footer-heading">Our Services.</div>
+            <div className="footer-heading">
+              Our Services<span>.</span>
+            </div>
             <div className="footer-item">
               <a href="#">UX Design & DesignOps</a>
             </div>
@@ -55,7 +72,9 @@ function Footer() {
           </div>
 
           <div className="footer-column">
-            <div className="footer-heading">Resources.</div>
+            <div className="footer-heading">
+              Resources<span>.</span>
+            </div>
             <div className="footer-item">
               <a href="#">Join Slack Community</a>
             </div>
@@ -79,7 +98,9 @@ function Footer() {
           </div>
 
           <div className="footer-column">
-            <div className="footer-heading">About.</div>
+            <div className="footer-heading">
+              About<span>.</span>
+            </div>
             <div className="footer-item">
               <a href="#">About Noran</a>
             </div>

@@ -221,7 +221,7 @@ header {
   height: 8.8rem;
   padding: 1.8rem 6.4rem;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 /* Navbar */
@@ -235,7 +235,6 @@ header {
   padding: 2rem;
   display: flex;
   align-items: center;
-  gap: 0.8rem;
   white-space: nowrap;
   cursor: pointer;
 }
@@ -281,7 +280,7 @@ header {
 
 .nav-dropdown {
   width: 80%;
-  height: 17rem;
+  height: 20rem;
   flex-wrap: wrap;
 }
 
@@ -294,6 +293,7 @@ header {
 .nav-dropdown-item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 .nav-dropdown-item:last-child() {
@@ -1402,6 +1402,10 @@ footer {
   cursor: pointer;
 }
 
+.icon-wrapper:hover {
+  text-decoration: none;
+}
+
 .icon-wrapper i {
   width: 1.6rem;
   height: 1.6rem;
@@ -1420,6 +1424,10 @@ footer {
   font-weight: 500;
   line-height: 3rem;
   white-space: nowrap;
+}
+
+.footer-heading span {
+  color: #457d61;
 }
 
 .footer-item a {
@@ -1518,7 +1526,7 @@ footer {
 
 @media screen and (max-width: 1400px) {
   .nav-dropdown {
-    height: 23rem;
+    height: 26rem;
   }
 
   .nav-dropdown-wrapper .cta-box {
@@ -1776,8 +1784,9 @@ footer {
   }
 
   .nav-dropdown-wrapper {
+    height: 30rem;
     position: unset;
-    padding: 0;
+    padding: 4rem 0 0 0;
     background-color: #fff;
   }
 
@@ -1963,6 +1972,10 @@ footer {
     left: unset;
   }
 
+  .nav-dropdown-item:last-child {
+    margin-bottom: 0;
+  }
+
   .home-section-1-content p {
     text-align: initial;
   }
@@ -2026,7 +2039,7 @@ footer {
   }
 
   .nav-list-item i {
-    top: 3rem;
+    top: 2.9rem;
   }
 
   .nav-dropdown-item h3 {
@@ -2146,6 +2159,10 @@ footer {
     height: 16rem;
   }
 
+  .nav-list-item i {
+    top: 2.7rem;
+  }
+
   .home-section-3-hero-text {
     top: 20rem;
   }
@@ -2187,6 +2204,10 @@ footer {
   .infinite-rotation {
     width: 18rem;
     height: 18rem;
+  }
+
+  .nav-list-item i {
+    top: 2.2rem;
   }
 
   .home-section-1-content h1 {
@@ -2263,6 +2284,10 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
+  .nav-list-item i {
+    top: 2.5rem;
+  }
+
   .home-section-2-interactive {
     width: 100%;
   }
@@ -2326,6 +2351,10 @@ footer {
 }
 
 @media screen and (max-width: 350px) {
+  .nav-list-item i {
+    top: 2.2rem;
+  }
+
   .home-section-2 {
     margin-bottom: 5rem;
   }
@@ -2338,6 +2367,10 @@ footer {
 }
 
 @media screen and (max-width: 330px) {
+  .nav-list-item i {
+    top: 2.5rem;
+  }
+
   .home-section-3,
   .social-impact-section-1 {
     height: 130rem;

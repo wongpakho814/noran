@@ -13,41 +13,85 @@ import udemyLogo from "../images/Udemy_Logo_3280x1712-scaled_1.png";
 function Navigation() {
   const handleMouseOverAnchor = (event) => {
     event.currentTarget.lastElementChild.style.cssText =
-      "display: flex; animation: fade-in 0.3s forwards;";
-    event.currentTarget.firstElementChild.nextElementSibling.style.cssText =
-      "transform: rotateX(180deg); transition: transform 0.3s;";
+      "display: flex; animation: fade-in 0.5s forwards;";
+    const arrow = event.currentTarget.firstElementChild.nextElementSibling;
+
+    window.innerWidth > 1000
+      ? (arrow.style.cssText =
+          "transform: rotateX(180deg) translateY(-0.1rem); transition: transform 0.5s;")
+      : window.innerWidth <= 1000 && window.innerWidth > 600 
+      ? (arrow.style.cssText =
+          "transform: rotateX(180deg) translateY(-0.3rem); transition: transform 0.5s;")
+      : window.innerWidth <= 600 && window.innerWidth > 500
+      ? (arrow.style.cssText =
+          "transform: rotateX(180deg) translateY(-0.7rem); transition: transform 0.5s;")
+      : window.innerWidth <= 500 && window.innerWidth > 450
+      ? (arrow.style.cssText =
+          "transform: rotateX(180deg) translateY(-1rem); transition: transform 0.5s;")
+      : (arrow.style.cssText =
+          "transform: rotateX(180deg) translateY(-1.6rem); transition: transform 0.5s;");
   };
 
   const handleMouseOverDiv = (event) => {
     event.currentTarget.style.cssText =
-      "display: flex; animation: fade-in 0.3s forwards;";
+      "display: flex; animation: fade-in 0.5s forwards;";
   };
 
   const handleMouseOutAnchor = (event) => {
     event.currentTarget.lastElementChild.style.cssText =
-      "display: flex; animation: fade-out 0.3s forwards;";
+      "display: flex; animation: fade-out 0.5s forwards;";
     event.currentTarget.firstElementChild.nextElementSibling.style.cssText =
-      "transform: rotateX(0deg); transition: transform 0.3s;";
+      "transform: rotateX(0deg); transition: transform 0.5s;";
   };
 
   const handleMouseOutDiv = (event) => {
     event.currentTarget.style.cssText =
-      "display: flex; animation: fade-out 0.3s forwards;";
+      "display: flex; animation: fade-out 0.5s forwards;";
   };
 
   const handleOnClickAnchor = (event) => {
     if (event.currentTarget.lastElementChild.style.display === "flex") {
+      event.currentTarget.style.cssText = "padding-bottom: 2rem;";
       event.currentTarget.lastElementChild.style.cssText =
-        "display: none; animation: fade-out 0.3s forwards;";
+        "display: none; animation: fade-out 0.5s forwards;";
       event.currentTarget.firstElementChild.nextElementSibling.style.cssText =
-        "transform: rotateX(0deg); transition: transform 0.3s;";
+        "transform: rotateX(0deg); transition: transform 0.5s;";
     } else {
+      event.currentTarget.style.cssText = "padding-bottom: 0;";
       event.currentTarget.lastElementChild.style.cssText =
-        "display: flex; animation: fade-in 0.3s forwards;";
-      event.currentTarget.firstElementChild.nextElementSibling.style.cssText =
-        "transform: rotateX(180deg); transition: transform 0.3s;";
+        "display: flex; animation: fade-in 0.5s forwards;";
+      const arrow = event.currentTarget.firstElementChild.nextElementSibling;
+
+      window.innerWidth > 1000
+        ? (arrow.style.cssText =
+            "transform: rotateX(180deg) translateY(-0.1rem); transition: transform 0.5s;")
+        : window.innerWidth <= 1000 && window.innerWidth > 600
+        ? (arrow.style.cssText =
+            "transform: rotateX(180deg) translateY(-0.3rem); transition: transform 0.5s;")
+        : window.innerWidth <= 600 && window.innerWidth > 500
+        ? (arrow.style.cssText =
+            "transform: rotateX(180deg) translateY(-0.7rem); transition: transform 0.5s;")
+        : window.innerWidth <= 500 && window.innerWidth > 450
+        ? (arrow.style.cssText =
+            "transform: rotateX(180deg) translateY(-1rem); transition: transform 0.5s;")
+        : (arrow.style.cssText =
+            "transform: rotateX(180deg) translateY(-1.6rem); transition: transform 0.5s;");
     }
   };
+
+  window.addEventListener("mouseup", function (event) {
+    const navListItem = document.querySelectorAll(".nav-list-item");
+    const navList = document.querySelector(".nav-list");
+
+    if (
+      this.window.innerWidth <= 1000 &&
+      !Array.from(navListItem).includes(event.target) &&
+      navList.style.display === "flex"
+    ) {
+      navList.style.cssText =
+        "display: none; animation: fade-out 0.5s forwards;";
+    }
+  });
 
   document.addEventListener("animationstart", function (e) {
     if (e.animationName === "fade-in") {
