@@ -218,7 +218,14 @@ function Navigation() {
                     Inclusivity!
                   </p>
                 </div>
-                <button className="slack-btn">Meet the network</button>
+                <a
+                  className="slack-btn"
+                  href="https://join.slack.com/t/norandesign/shared_invite/zt-1uesdmq4g-hjHLW6Eh~mWPy6Ir611oSQ"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Meet the network
+                </a>
               </div>
             </div>
             <div className="blob"></div>

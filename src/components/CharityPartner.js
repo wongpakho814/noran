@@ -7,7 +7,7 @@ import prevIconUnactivated from "../images/PreviousUnactivated.svg";
 import nextIconActivated from "../images/NextActivated.svg";
 import nextIconUnactivated from "../images/NextUnactivated.svg";
 
-function CharityPartner({ name, industry, text, index }) {
+function CharityPartner({ name, industry, text, link, index }) {
   const SwiperButtonNext = ({ children }) => {
     const swiper = useSwiper();
     return (
@@ -43,7 +43,7 @@ function CharityPartner({ name, industry, text, index }) {
         </div>
       </div>
       <p>{text}</p>
-      <a href="#">Visit to learn more</a>
+      <a href={link}>Visit to learn more</a>
       <div className="home-section-4-arrows">
         <SwiperButtonPrev>
           <img

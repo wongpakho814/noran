@@ -58,12 +58,17 @@ html {
   border-radius: 7rem;
   border: none;
   background: var(--primary, #457d61);
-  color: var(--white, #fff);
+  color: var(--white, #fff) !important;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 2rem;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.lets-talk-btn:hover {
+  text-decoration: none;
+  color: #fff;  
 }
 
 .hamburger-btn {
@@ -135,6 +140,11 @@ html {
   cursor: pointer;
 }
 
+.join-community-btn:hover {
+  text-decoration: none;
+  color: #457d61;  
+}
+
 .cta-text {
   display: flex;
   flex-direction: column;
@@ -203,8 +213,15 @@ html {
 
 /* Swiper */
 .swiper-wrapper {
+  height: 34.5rem !important;
   display: flex;
   align-items: center;
+}
+
+.swiper-slide {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .swiper-slide-active {
@@ -419,10 +436,15 @@ header {
   border-radius: 7rem;
   border: 0.1rem solid var(--primary, #457d61);
   background: var(--light-bg, #fcfcfc);
-  color: var(--primary, #457d61);
+  color: var(--primary, #457d61) !important;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 2rem;
+  cursor: pointer;
+}
+
+.slack-btn:hover {
+  text-decoration: none;  
 }
 
 .slack-box .blob,
@@ -1145,6 +1167,10 @@ header {
   letter-spacing: 0.048rem;
 }
 
+.social-impact-section-3-left-column h1 span {
+  color: #457d61;  
+}
+
 .social-impact-section-3-left-column p {
   font-size: 2rem;
   font-weight: 400;
@@ -1207,7 +1233,7 @@ header {
   gap: 0.8rem;
 }
 
-.social-impact-section-3-client-info h1 {
+.social-impact-section-3-client-info h3 {
   color: var(--text, #333);
   font-family: Outfit;
   font-size: 1.8rem;
@@ -1319,6 +1345,10 @@ header {
   justify-content: space-evenly;
   gap: 4rem;
   background: var(--white, #fff);
+}
+
+.about-section-2 .swiper-wrapper {
+  height: 50.2rem !important;
 }
 
 .about-section-2-member-info h3 {
@@ -1659,6 +1689,10 @@ footer {
 
   .home-section-2-text-content p {
     text-align: initial;
+  }
+
+  .about-section-2 .swiper-wrapper {
+    height: 55rem !important;
   }
 }
 
@@ -2283,6 +2317,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 410px) {
+  .about-section-2 .swiper-wrapper {
+    height: 70rem !important;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .nav-list-item i {
     top: 2.5rem;
@@ -2402,6 +2442,12 @@ footer {
 
   .about-section-1-cards {
     top: 65rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about-section-2 .swiper-wrapper {
+    height: 77rem !important;
   }
 }
 /* End of responsiveness */

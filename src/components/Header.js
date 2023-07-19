@@ -23,7 +23,12 @@ function Header() {
         <Navigation />
       </nav>
       <div className="header-btns">
-        <button className="lets-talk-btn">Let's talk</button>
+        <a
+          className="lets-talk-btn"
+          href="mailto: mailto: info@norandesign.com"
+        >
+          Let's talk
+        </a>
         <div className="hamburger-btn" onClick={handleOnClickMenu}></div>
       </div>
     </header>

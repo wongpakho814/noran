@@ -103,7 +103,7 @@ function About() {
           slidesPerView={1}
           loop={true}
         >
-          <SwiperSlide>
+          <SwiperSlide id="nicole-team-member-card">
             <TeamMember
               name={"Nicole Fung (she/her)"}
               position={"Founder & Creative Director"}

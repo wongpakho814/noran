@@ -138,7 +138,9 @@ function SocialImpact() {
 
       <section className="social-impact-section-3">
         <div className="social-impact-section-3-left-column">
-          <h1>Our charity partners.</h1>
+          <h1>
+            Our charity partners<span>.</span>
+          </h1>
           <p>
             These are the charities that we’re constantly providing our free
             design solutions to, and we couldn’t have done it without the
@@ -161,6 +163,7 @@ function SocialImpact() {
               text={
                 "ADHD Aware is a national charity based in Brighton which has been supporting ADHD adults for almost a decade. It provides monthly peer support groups, both in person and online, for ADHD adults, their partners and for parents of ADHD children or young adults."
               }
+              link={"https://adhdaware.org.uk/"}
               index={"avatar1"}
             />
           </SwiperSlide>
@@ -172,6 +175,7 @@ function SocialImpact() {
               text={
                 "9 GP practices have joined the East and Central Brighton Primary Care Network, to build on current primary care services and enable greater provision of proactive, personalised, coordinated and more integrated health and social care."
               }
+              link={"https://ecb.pcn.gpweb.org.uk/our-primary-care-network"}
               index={"avatar2"}
             />
           </SwiperSlide>
