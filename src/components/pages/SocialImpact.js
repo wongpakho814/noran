@@ -25,6 +25,12 @@ function SocialImpact() {
                 contributing to environmental conservation and supporting
                 organisations that drive positive social change.
               </p>
+              <a
+                className="lets-talk-btn our-social-commitment drop-in-5"
+                href="/social-impact#social-commitment"
+              >
+                Our social commitment
+              </a>
             </div>
             <div className="blob"></div>
             <div className="home-section-3-hero-img-wrapper drop-in-5">
@@ -147,7 +153,7 @@ function SocialImpact() {
             receive high-quality services while contribute to this positive
             impact - a win-win solution.
           </p>
-          <button className="lets-talk-btn">Work with us</button>
+          <button className="lets-talk-btn work-with-us">Work with us</button>
         </div>
         <Swiper
           className="social-impact-section-3-right-column"

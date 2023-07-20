@@ -83,7 +83,8 @@ dl {
 
 .our-services,
 .our-social-commitment,
-.our-case-studies {
+.our-case-studies,
+.work-with-us {
   padding: 2.4rem 4rem;
   font-size: 2rem;
   line-height: 120%;
@@ -304,6 +305,7 @@ header {
 .nav-list {
   display: flex;
   margin-bottom: 0;
+  z-index: 1000;
 }
 
 .nav-list-item {
@@ -1922,7 +1924,6 @@ footer {
     transform: translateX(-50%);
     flex-direction: column;
     background: #fff;
-    z-index: 200;
   }
 
   .nav-list-item {
@@ -2353,7 +2354,11 @@ footer {
   .home-section-1,
   .home-section-2,
   .home-section-3,
-  .home-section-4 {
+  .home-section-4,
+  .social-impact-section-1,
+  .social-impact-section-2,
+  .social-impact-section-3,
+  .footer-columns {
     padding: 4rem 2rem 0 2rem;
   }
 
@@ -2406,6 +2411,10 @@ footer {
 
   .icon-wrapper:last-child i {
     width: 2.5rem;
+  }
+
+  .social-impact-section-2 {
+    padding-bottom: 0;
   }
 
   .about-section-1 {
