@@ -21,7 +21,10 @@ html {
 p,
 h1,
 h2,
-h3 {
+h3,
+ul,
+ol,
+dl {
   margin-bottom: 0;
 }
 
@@ -148,7 +151,7 @@ h3 {
   border-radius: 7rem;
   border: 0.1rem solid var(--primary, #457d61);
   background: var(--light-bg, #fcfcfc);
-  color: var(--primary, #457d61);
+  color: var(--primary, #457d61) !important;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 2rem;
@@ -343,7 +346,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background: var(--light-bg, #fcfcfc);
-  z-index: 100;
+  z-index: 1000;
   cursor: auto;
 }
 
@@ -353,7 +356,7 @@ header {
 
 .nav-dropdown {
   width: 80%;
-  height: 20rem;
+  height: 23.7rem;
   flex-wrap: wrap;
 }
 
@@ -364,6 +367,7 @@ header {
 }
 
 .nav-dropdown-item {
+  width: 31.05rem;
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
@@ -404,6 +408,7 @@ header {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 150%;
+  white-space: break-spaces;
 }
 
 .slack-box,
@@ -1645,13 +1650,15 @@ footer {
   }
 }
 
+@media screen and (max-width: 1500px) {
+  .nav-dropdown {
+    height: 30.2rem;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   header {
     padding: 1.8rem 4rem;
-  }
-
-  .nav-dropdown {
-    height: 26rem;
   }
 
   .nav-dropdown-wrapper .cta-box {
@@ -1908,10 +1915,10 @@ footer {
   .nav-list {
     display: none;
     width: 100%;
+    padding: 0 2rem 0 2rem;
     position: absolute;
     top: 8.8rem;
     left: 50%;
-    padding: 0 5rem 0 5rem;
     transform: translateX(-50%);
     flex-direction: column;
     background: #fff;
@@ -1949,7 +1956,6 @@ footer {
   .nav-dropdown {
     width: 100%;
     position: relative;
-    left: 5rem;
   }
 
   .nav-dropdown-wrapper-learn {
