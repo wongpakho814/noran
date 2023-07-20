@@ -28,7 +28,10 @@ function TeamMember({ name, position, text, index }) {
 
   return (
     <React.Fragment>
-      <div className="social-impact-section-3-client">
+      <div
+        className="social-impact-section-3-client"
+        style={{ whiteSpace: "pre-line" }}
+      >
         {index === "member1" ? (
           <img src={members.member1} alt="Nicole Fung"></img>
         ) : index === "member2" ? (
@@ -47,7 +50,7 @@ function TeamMember({ name, position, text, index }) {
           <p>{position}</p>
         </div>
       </div>
-      <p>{text}</p>
+      <p style={{ whiteSpace: "pre-line" }}>{text}</p>
       <a href="#">LinkedIn</a>
       <div className="home-section-4-arrows">
         <SwiperButtonPrev>
