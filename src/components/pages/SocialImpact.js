@@ -1,6 +1,5 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCards } from "swiper/modules";
 import InfiniteRotation from "../InfiniteRotation";
 import CharityPartner from "../CharityPartner";
 import heroImg from "../../images/hero-img-plant.png";

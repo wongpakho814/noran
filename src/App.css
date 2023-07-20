@@ -18,6 +18,13 @@ html {
   scroll-behavior: smooth;
 }
 
+p,
+h1,
+h2,
+h3 {
+  margin-bottom: 0;
+}
+
 /* Logo */
 .logo-wrapper {
   display: flex;
@@ -71,6 +78,14 @@ html {
   color: #fff;
 }
 
+.our-services,
+.our-social-commitment,
+.our-case-studies {
+  padding: 2.4rem 4rem;
+  font-size: 2rem;
+  line-height: 120%;
+}
+
 .hamburger-btn {
   display: none;
   width: 2.4rem;
@@ -109,7 +124,7 @@ html {
 
 .cta-box-column {
   width: 30.7rem;
-  height: 16.6rem;
+  height: 15.3rem;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -186,6 +201,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
 .infinite-rotation {
@@ -198,6 +214,7 @@ html {
   background-image: url("./images/Infinite Rotation.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #fff;
   animation: rotateText 12s linear infinite;
 }
 
@@ -213,8 +230,6 @@ html {
 
 /* Swiper */
 .swiper-wrapper {
-  height: 34.5rem !important;
-  display: flex;
   align-items: center;
 }
 
@@ -556,15 +571,15 @@ header {
 /* Home page section 1 */
 .home-section-1 {
   width: 100%;
-  height: 100vh;
+  height: max-content;
   display: flex;
   padding: 6.4rem;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
 .home-section-1-content {
-  width: 100%;
+  width: 62.9rem;
   height: 52.2rem;
   display: inline-flex;
   flex-direction: column;
@@ -576,6 +591,7 @@ header {
 .home-section-1-content h1,
 .home-section-1-content p {
   width: 100%;
+  margin-bottom: 0;
   color: var(--text, #333);
   font-family: Outfit;
   font-size: 6.4rem;
@@ -679,7 +695,7 @@ header {
 /* Home page section 2 */
 .home-section-2 {
   width: 100%;
-  height: 100vh;
+  height: max-content;
   display: flex;
   padding: 0 6.4rem 0 6.4rem;
   align-items: center;
@@ -690,16 +706,16 @@ header {
 
 .home-section-2-content-wrapper {
   width: 100%;
-  height: 55.946rem;
+  height: 57.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 4rem;
 }
 
 .home-section-2-interactive {
   width: 60.8rem;
-  height: 55.9465rem;
+  height: 57.5rem;
   position: relative;
 }
 
@@ -788,7 +804,7 @@ header {
 
 .home-section-2-text-content {
   width: 66.4rem;
-  height: 55.946rem;
+  height: 57.5rem;
   display: flex;
   padding-top: 6.4rem;
   flex-direction: column;
@@ -797,6 +813,7 @@ header {
 }
 
 .home-section-2-text-content h1 {
+  margin-bottom: 0;
   color: var(--text, #333);
   font-family: Outfit;
   font-size: 6.4rem;
@@ -825,7 +842,7 @@ header {
 .social-impact-section-1,
 .about-section-1 {
   width: 100%;
-  padding: 6.4rem 6.4rem 0 6.4rem;
+  padding: 6.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -833,9 +850,8 @@ header {
 
 .home-section-3-content-wrapper {
   width: 100%;
-  height: 73.1rem;
+  height: 65rem;
   position: relative;
-  overflow: hidden;
 }
 
 .home-section-3-content-wrapper .infinite-rotation-wrapper {
@@ -856,7 +872,7 @@ header {
 
 .home-section-3-hero-text {
   width: 54.1rem;
-  height: 33.8rem;
+  height: 32.8rem;
   position: absolute;
   top: 14.2rem;
   left: 6.2rem;
@@ -978,7 +994,7 @@ header {
 /* Home section 4 */
 .home-section-4 {
   width: 100%;
-  height: 100vh;
+  height: max-content;
   display: flex;
   padding: 6.4rem;
   align-items: center;
@@ -1018,11 +1034,12 @@ header {
 .home-section-4-card {
   display: flex !important;
   width: 58.7rem;
-  padding: 4rem 2.4rem !important;
+  height: 49.5rem;
+  padding: 6rem 2.4rem !important;
   margin: 0 !important;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-end;
+  justify-content: center;
   gap: 2.4rem;
   border-radius: 3.2rem;
   border: 0.1rem solid var(--text, #333);
@@ -1035,13 +1052,13 @@ header {
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 140%;
 }
 
 .home-section-4-card-client {
   display: flex;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 2.4rem;
   gap: 2.4rem;
 }
 
@@ -1066,7 +1083,7 @@ header {
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%;
+  line-height: 140%;
 }
 
 .home-section-4-card-client-info p {
@@ -1127,7 +1144,6 @@ header {
 }
 
 .social-impact-section-2-insight-card {
-  width: 42.67rem;
   height: 16.6rem;
   display: flex;
   padding: 2.4rem;
@@ -1420,15 +1436,15 @@ footer {
 }
 
 .footer-columns .cta-box {
-  margin-top: 3rem;
+  margin-top: 2.4rem;
 }
 
 .footer-column {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-right: 4rem;
   gap: 1.6rem;
-  flex: 1 0 0;
 }
 
 .footer-area-1 {
@@ -1482,9 +1498,26 @@ footer {
   color: #457d61;
 }
 
+.footer-area-1 .cta-box {
+  width: 44.4rem;
+  height: 23.7rem;
+  justify-content: flex-start;
+}
+
+.footer-area-1 .cta-text {
+  font-size: 1.6rem;
+  line-height: 140%;
+}
+
+.footer-area-1 .cta-box-column {
+  width: 41.2rem;
+  margin: 2.8rem 1.6rem 3.7rem 1.6rem;
+}
+
 .footer-area-2 {
   width: 70%;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .footer-heading {
@@ -1501,22 +1534,24 @@ footer {
 
 .footer-item a {
   color: var(--text, #333);
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 140%;
   white-space: nowrap;
 }
 
 .coming-soon {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  justify-content: space-between;
 }
 
 .coming-soon-label {
-  display: flex;
-  height: 2rem;
+  width: 12.7rem;
+  height: 4.1rem;
   padding: 0.8rem;
+  margin-left: 0.5rem;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1524,9 +1559,9 @@ footer {
   border-radius: 10rem;
   background: var(--secondary, #d6ebdc);
   color: var(--text-default, #222);
-  font-size: 0.8rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 140%;
   white-space: nowrap;
 }
 
@@ -1558,42 +1593,63 @@ footer {
 /* Responsiveness */
 @media screen and (max-width: 1600px) {
   .footer-columns {
-    height: 60rem;
+    height: 78.5rem;
+    padding: 4rem 6.4rem;
+    flex-direction: column;
+    justify-content: unset;
+  }
+
+  .footer-area-1 {
+    width: 100%;
+    position: relative;
   }
 
   .footer-columns .cta-box {
-    width: 25rem;
-    height: 33rem;
+    width: 100%;
+    height: 17.4rem;
     margin-top: 0;
     align-items: flex-start;
     position: absolute;
-    top: 17.2rem;
-    left: 6.4rem;
+    top: 48.3rem;
   }
 
   .footer-columns .cta-box-column {
-    width: 21.8rem;
+    width: 100%;
+    margin: 2.4rem 1.6rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: absolute;
-    top: 3.976rem;
     gap: 1.6rem;
   }
 
   .footer-columns .cta-box-btn {
-    flex-direction: column;
     display: flex;
     align-items: flex-start;
     gap: 0.8rem;
   }
 
   .footer-columns .blob {
-    transform: translate(-7rem, -10.5rem);
+    width: 200%;
+    height: 200%;
+    transform: translate(-9rem, -15rem);
+  }
+
+  .footer-area-2 {
+    width: 100%;
+    margin-top: 4rem;
+    justify-content: space-between;
+  }
+
+  .footer-area-2 .footer-column {
+    margin-right: 1rem;
   }
 }
 
 @media screen and (max-width: 1400px) {
+  header {
+    padding: 1.8rem 4rem;
+  }
+
   .nav-dropdown {
     height: 26rem;
   }
@@ -1634,33 +1690,96 @@ footer {
 
   .home-section-1 {
     height: auto;
+    padding: 6.4rem 4rem;
   }
 
   .home-section-1-content {
+    width: 62.9rem;
     height: auto;
-    align-items: center;
-    text-align: center;
-  }
-
-  .infinite-rotation-wrapper,
-  .infinite-rotation {
-    width: 12rem;
-    height: 12rem;
   }
 
   .home-section-1-image-area {
-    display: none;
+    width: 30rem;
+    height: 56rem;
+  }
+
+  .home-section-1-image-area img {
+    width: 16.4rem;
+    height: 25.5rem;
+  }
+
+  .home-section-1-image-2 {
+    bottom: 3.8rem;
+  }
+
+  .home-section-1-waves {
+    width: 18.984rem;
+    height: 13.6rem;
+    left: 1.28rem;
+    overflow: hidden;
   }
 
   .home-section-2 {
     height: auto;
-    padding: 6.4rem;
+    padding: 0 4rem 6.4rem 4rem;
   }
 
   .home-section-2-content-wrapper {
     height: 100%;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+  }
+
+  .home-section-2-interactive {
+    width: 48.7rem;
+    height: 45.6732rem;
+  }
+
+  .home-section-2-interactive-card {
+    width: 16.0197rem;
+    height: 16.3275rem;
+  }
+
+  .home-section-2-interactive-card p {
+    font-size: 1.6rem;
+  }
+
+  .home-section-2-interactive-card-1 {
+    top: 9.74rem;
+    left: unset;
+    right: 0;
+  }
+
+  .home-section-2-interactive-card-2 {
+    top: 13.3rem;
+    left: 6.65rem;
+  }
+
+  .home-section-2-interactive-card-3 {
+    top: unset;
+    bottom: 0;
+    left: 0;
+    right: unset;
+  }
+
+  .home-section-2-interactive-card-4 {
+    top: unset;
+    left: unset;
+    bottom: 4.01rem;
+    right: 14.1rem;
+  }
+
+  .home-section-2-interactive-card-5 {
+    top: unset;
+    left: unset;
+    bottom: 1.14rem;
+    right: 0.481rem;
+  }
+
+  .home-section-2-interactive-card-6 {
+    top: 2.08rem;
+    right: 14.1rem;
+    left: unset;
+    bottom: unset;
   }
 
   .home-section-2-interactive-card-7 {
@@ -1668,15 +1787,25 @@ footer {
   }
 
   .home-section-2-text-content {
-    align-items: center;
-    width: 100%;
-    text-align: center;
+    width: 41.7rem;
+    height: 55.4rem;
+    gap: 2.4rem;
+  }
+
+  .home-section-2-text-content h1 {
+    font-size: 4.8rem;
   }
 
   .home-section-3-content-wrapper .infinite-rotation-wrapper {
-    top: 2.4rem;
-    right: unset;
-    left: 6.2rem;
+    top: 5.45rem;
+    right: 6.23rem;
+    z-index: 202;
+  }
+
+  .home-section-3-hero-text {
+    width: 42.5rem;
+    top: 9.15rem;
+    left: 4rem;
   }
 
   .social-impact-section-2-insights {
@@ -1688,13 +1817,21 @@ footer {
     width: 100%;
     height: max-content;
   }
+
+  .home-section-4-card {
+    height: 52.5rem;
+  }
 }
 
 @media screen and (max-width: 1300px) {
   .home-section-3,
   .social-impact-section-1,
   .about-section-1 {
-    height: 110rem;
+    height: 107rem;
+  }
+
+  .home-section-3-content-wrapper {
+    height: 95rem;
   }
 
   .home-section-3-card {
@@ -1702,22 +1839,12 @@ footer {
     flex-direction: column;
   }
 
-  .home-section-3-content-wrapper {
-    height: 100%;
-  }
-
   .home-section-3-hero-img-wrapper {
-    width: 20rem;
+    right: 1.6rem;
   }
 
-  .home-section-3-hero-img-wrapper img {
-    top: 26rem;
-  }
-
-  .home-section-3-hero-img-wrapper .blob2 {
-    width: 21rem;
-    top: 26rem;
-    right: 0;
+  .home-section-4-card {
+    height: 54.5rem;
   }
 }
 
@@ -1730,8 +1857,18 @@ footer {
     text-align: initial;
   }
 
+  .home-section-4-card {
+    height: 57.5rem;
+  }
+
   .about-section-2 .swiper-wrapper {
     height: 55rem !important;
+  }
+}
+
+@media screen and (max-width: 1127px) {
+  .footer-columns .cta-box {
+    height: 20rem;
   }
 }
 
@@ -1747,73 +1884,11 @@ footer {
   .home-section-4-card,
   .social-impact-section-3-right-column {
     width: 100%;
-    align-items: center;
-  }
-
-  .home-section-4-text,
-  .social-impact-section-3-left-column {
-    text-align: center;
-  }
-
-  .footer-columns {
-    height: 80rem;
-    padding-top: 0;
-    flex-direction: column;
-  }
-
-  .footer-column {
-    align-items: center;
-  }
-
-  .footer-column-1 {
-    flex: 0;
-  }
-
-  .footer-area-1 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  .footer-columns .cta-box {
-    position: relative;
-    width: 37.1rem;
-    height: 33.1rem;
-    top: 0;
-    left: 0;
-  }
-
-  .footer-columns .cta-box-column {
-    width: 30.7rem;
-    height: 16.6rem;
-    display: inline-flex;
-    flex-direction: column;
     align-items: flex-start;
-    gap: 1.6rem;
-    top: 7.976rem;
-    z-index: 10;
   }
 
-  .footer-columns .cta-box-btn {
-    flex-direction: row;
-  }
-
-  .footer-columns .blob {
-    transform: translate(-9rem, -17rem);
-  }
-
-  .footer-area-2 {
-    width: 100%;
-    margin-top: 3rem;
-  }
-
-  .footer-bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .home-section-4-card {
+    height: 42.5rem;
   }
 }
 
@@ -1853,14 +1928,14 @@ footer {
   .nav-list-item i {
     position: absolute;
     top: 2.5rem;
-    right: 0;
+    right: 2.5rem;
   }
 
   .nav-dropdown-wrapper {
     height: 30rem;
     position: unset;
-    padding: 4rem 0 0 0;
-    background-color: #fff;
+    margin: 2rem 0 0 0;
+    padding-top: 2rem;
   }
 
   .nav-dropdown-services {
@@ -1989,23 +2064,47 @@ footer {
     margin-bottom: 0;
   }
 
+  .home-section-1-image-area {
+    display: none;
+  }
+
+  .home-section-2-content-wrapper {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .home-section-2-interactive {
+    left: -2rem;
+  }
+
+  .home-section-2-text-content {
+    width: 100%;
+    height: max-content;
+    padding: 1.6rem 2rem 0 2rem;
+  }
+
   .home-section-3-hero-img-wrapper {
-    width: 12rem;
+    width: 30rem;
+    right: 0.6rem;
   }
 
   .home-section-3-hero-img-wrapper img {
-    top: 34rem;
+    top: 13rem;
   }
 
   .home-section-3-hero-img-wrapper .blob2 {
-    width: 13rem;
-    top: 35rem;
+    width: 32rem;
+    top: 15rem;
     right: -0.4rem;
   }
 
   .home-section-4-text p,
   .social-impact-section-3-left-column p {
     text-align: initial;
+  }
+
+  .home-section-4-card {
+    height: 44.5rem;
   }
 
   .about-section-1 {
@@ -2025,9 +2124,76 @@ footer {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .home-section-3-hero-img-wrapper {
+    width: 22rem;
+  }
+
+  .home-section-3-hero-img-wrapper img {
+    top: 22rem;
+  }
+
+  .home-section-3-hero-img-wrapper .blob2 {
+    width: 24rem;
+    top: 24rem;
+  }
+
+  .footer-columns {
+    height: max-content;
+  }
+
+  .footer-area-1 .cta-box,
+  .footer-column {
+    margin-top: 4rem;
+  }
+
+  .footer-area-1 .cta-box {
+    width: 37.1rem;
+    height: 26rem;
+    position: relative;
+    top: 0;
+  }
+
+  .footer-area-1 .cta-box-column {
+    margin: 3.95rem 3.2rem 3.45rem 3.2rem;
+  }
+
+  .footer-area-1 .blob {
+    width: 120%;
+    height: 120%;
+  }
+
+  .footer-area-2 {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .company {
+    white-space: break-spaces;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .home-section-4-card {
+    height: 46.5rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
   html {
     font-size: 55%;
+  }
+
+  .infinite-rotation-wrapper,
+  .infinite-rotation {
+    width: 12rem;
+    height: 12rem;
   }
 
   .nav-dropdown-wrapper,
@@ -2037,7 +2203,6 @@ footer {
 
   .nav-dropdown-wrapper {
     justify-content: center;
-    padding-top: 4rem;
   }
 
   .nav-dropdown-services {
@@ -2049,6 +2214,10 @@ footer {
     margin-bottom: 0;
   }
 
+  .home-section-1-content {
+    width: 100%;
+  }
+
   .home-section-1-content p {
     text-align: initial;
   }
@@ -2058,27 +2227,39 @@ footer {
     flex-direction: column;
   }
 
+  .home-section-3-content-wrapper .infinite-rotation-wrapper {
+    top: 2.4rem;
+    right: unset;
+    left: 4rem;
+  }
+
   .home-section-3-hero-text {
     width: 80%;
+    top: 15rem;
+    gap: 1.6rem;
+  }
+
+  .home-section-3-hero-img-wrapper {
+    width: 12rem;
+  }
+
+  .home-section-3-hero-img-wrapper img {
+    top: 34rem;
+  }
+
+  .home-section-3-hero-img-wrapper .blob2 {
+    width: 14rem;
+    top: 35rem;
+    right: -0.8rem;
   }
 
   .footer-columns {
     height: auto;
   }
 
-  .footer-area-1,
-  .footer-area-2 {
-    flex-direction: column;
-  }
-
   .icon-wrapper i {
     width: 2rem;
     height: 1.6rem;
-  }
-
-  .footer-area-1 .cta-box,
-  .footer-column {
-    margin-top: 5rem;
   }
 
   .footer-heading {
@@ -2092,6 +2273,12 @@ footer {
   .copyright,
   .company {
     font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .home-section-4-card {
+    height: 49.5rem;
   }
 }
 
@@ -2157,6 +2344,13 @@ footer {
     font-size: 2rem;
   }
 
+  .home-section-1,
+  .home-section-2,
+  .home-section-3,
+  .home-section-4 {
+    padding: 4rem 2rem 0 2rem;
+  }
+
   .home-section-2-text-content button,
   .home-section-3-hero-text button,
   .home-section-4-text button,
@@ -2164,17 +2358,21 @@ footer {
     font-size: 2.2rem;
   }
 
+  .home-section-3,
+  .social-impact-section-1,
+  .about-section-1 {
+    height: 99rem;
+  }
+
   .home-section-3-content-wrapper .infinite-rotation-wrapper {
-    left: 50%;
-    transform: translateX(-50%) !important;
+    left: 3rem;
   }
 
   .home-section-3-hero-text {
     width: 90%;
     top: 18rem;
-    left: 3.2rem;
-    align-items: center;
-    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .home-section-3-hero-text p {
@@ -2183,6 +2381,10 @@ footer {
 
   .home-section-3-hero-img-wrapper {
     display: none;
+  }
+
+  .home-section-4-card {
+    height: 51.5rem;
   }
 
   .home-section-4-card h3,
@@ -2211,13 +2413,11 @@ footer {
     width: max-content;
     height: 11rem;
   }
+}
 
-  .footer-area-1 .cta-heading {
-    font-size: 3rem;
-  }
-
-  .footer-area-1 .cta-text {
-    font-size: 1.6rem;
+@media screen and (max-width: 570px) {
+  .home-section-4-card {
+    height: 53.5rem;
   }
 }
 
@@ -2234,6 +2434,16 @@ footer {
 
   .nav-list-item i {
     top: 2.7rem;
+  }
+
+  .home-section-3,
+  .social-impact-section-1,
+  .about-section-1 {
+    height: 104rem;
+  }
+
+  .home-section-3-content-wrapper {
+    height: 100rem;
   }
 
   .home-section-3-hero-text {
@@ -2308,7 +2518,11 @@ footer {
   .home-section-3,
   .social-impact-section-1,
   .about-section-1 {
-    height: 120rem;
+    height: 109.5rem;
+  }
+
+  .home-section-3-content-wrapper {
+    height: 105.5rem;
   }
 
   .home-section-3-hero {
@@ -2356,6 +2570,9 @@ footer {
   }
 }
 
+@media screen and (max-width: 422px) {
+}
+
 @media screen and (max-width: 410px) {
   .about-section-2 .swiper-wrapper {
     height: 70rem !important;
@@ -2368,7 +2585,7 @@ footer {
   }
 
   .home-section-2-interactive {
-    width: 100%;
+    height: 48.7rem;
   }
 
   .home-section-2-interactive-card {
@@ -2408,6 +2625,16 @@ footer {
     left: 20.2rem;
   }
 
+  .home-section-3,
+  .social-impact-section-1,
+  .about-section-1 {
+    height: 114rem;
+  }
+
+  .home-section-3-content-wrapper {
+    height: 110rem;
+  }
+
   .home-section-3-hero {
     height: 80rem;
   }
@@ -2420,12 +2647,22 @@ footer {
     top: 70rem;
   }
 
+  .home-section-4-card {
+    height: 57.5rem;
+  }
+
   .icon-wrapper i {
     width: 2.5rem;
   }
 
   .about-section-1-cards {
     top: 60rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .home-section-4-card {
+    height: 59.5rem;
   }
 }
 
@@ -2440,8 +2677,22 @@ footer {
 }
 
 @media screen and (max-width: 340px) {
+  .home-section-3,
+  .social-impact-section-1,
+  .about-section-1 {
+    height: 119rem;
+  }
+
+  .home-section-3-content-wrapper {
+    height: 115rem;
+  }
+
   .home-section-3-card {
     top: 75rem;
+  }
+
+  .home-section-4-card {
+    height: 63.5rem;
   }
 }
 
@@ -2452,7 +2703,11 @@ footer {
 
   .home-section-3,
   .social-impact-section-1 {
-    height: 130rem;
+    height: 114rem;
+  }
+
+  .home-section-3-content-wrapper {
+    height: 110rem;
   }
 
   .home-section-3-hero {
@@ -2460,19 +2715,11 @@ footer {
   }
 
   .home-section-3-card {
-    top: 75rem;
-  }
-
-  .home-section-2-interactive {
-    left: -5rem;
+    top: 70rem;
   }
 
   .home-section-3-hero {
     height: 85rem;
-  }
-
-  .home-section-3-card {
-    top: 80rem;
   }
 
   .about-section-1-content-wrapper .home-section-3-hero-text {
@@ -2487,6 +2734,12 @@ footer {
 @media screen and (max-width: 320px) {
   .about-section-2 .swiper-wrapper {
     height: 77rem !important;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .home-section-4-card {
+    height: 68.5rem;
   }
 }
 /* End of responsiveness */

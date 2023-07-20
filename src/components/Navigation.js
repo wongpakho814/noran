@@ -105,10 +105,6 @@ function Navigation() {
     }
   });
 
-  window.addEventListener("resize", () => {
-    window.location.reload(false);
-  });
-
   return (
     <ul className="nav-list">
       <li
