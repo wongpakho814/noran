@@ -158,12 +158,16 @@ dl {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 2rem;
+  transition: background-color 0.3s;
   cursor: pointer;
 }
 
-.join-community-btn:hover {
+.join-community-btn:hover,
+.slack-btn:hover,
+.udemy-btn:hover {
   text-decoration: none;
-  color: #457d61;
+  color: #fff !important;
+  background: var(--tertiary, #1C4B34);
 }
 
 .cta-text {
@@ -247,6 +251,20 @@ dl {
 
 .swiper-slide-active {
   background-color: #fff;
+}
+
+.next-btn img:hover,
+.prev-btn img:hover { 
+  animation: btn-fade-in 0.3s forwards;
+}
+
+@keyframes btn-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /* End of swiper */
 
@@ -505,6 +523,7 @@ header {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 2rem;
+  transition: background-color 0.3s;
   cursor: pointer;
 }
 
