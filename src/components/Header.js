@@ -4,12 +4,14 @@ import logo from "../images/Noran logo.svg";
 
 function Header() {
   const handleOnClickMenu = () => {
-    if (document.querySelector(".nav-list").style.animationName === "fade-out")
+    if (document.querySelector(".nav-list").classList.contains("change")) {
+      document.querySelector(".nav-list").style.cssText =
+        "display: none; animation: fade-out 0.3s forwards;";
+      document.querySelector(".nav-list").classList.remove("change");
+    } else {
       document.querySelector(".nav-list").style.cssText =
         "display: flex; animation: fade-in 0.3s forwards;";
-    else {
-      document.querySelector(".nav-list").style.cssText =
-        "display: flex; animation: fade-out 0.3s forwards;";
+      document.querySelector(".nav-list").classList.add("change");  
     }
   };
 

@@ -117,7 +117,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="home-section-2">
+      <section className="home-section-2 drop-in-5">
         <div className="home-section-2-content-wrapper">
           <div className="home-section-2-interactive">
             <div className="home-section-2-interactive-card home-section-2-interactive-card-1">

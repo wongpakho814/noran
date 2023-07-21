@@ -13,69 +13,69 @@ import udemyLogo from "../images/Udemy_Logo_3280x1712-scaled_1.png";
 function Navigation() {
   const handleMouseOverAnchor = (event) => {
     event.currentTarget.lastElementChild.style.cssText =
-      "display: flex; animation: fade-in 0.5s forwards;";
+      "display: flex; animation: fade-in 0.3s forwards;";
     const arrow = event.currentTarget.firstElementChild.nextElementSibling;
 
     window.innerWidth > 1000
       ? (arrow.style.cssText =
-          "transform: rotateX(180deg) translateY(-0.1rem); transition: transform 0.5s;")
+          "transform: rotateX(180deg) translateY(-0.1rem); transition: transform 0.3s;")
       : window.innerWidth <= 1000 && window.innerWidth > 600 
       ? (arrow.style.cssText =
-          "transform: rotateX(180deg) translateY(-0.3rem); transition: transform 0.5s;")
+          "transform: rotateX(180deg) translateY(-0.3rem); transition: transform 0.3s;")
       : window.innerWidth <= 600 && window.innerWidth > 500
       ? (arrow.style.cssText =
-          "transform: rotateX(180deg) translateY(-0.7rem); transition: transform 0.5s;")
+          "transform: rotateX(180deg) translateY(-0.7rem); transition: transform 0.3s;")
       : window.innerWidth <= 500 && window.innerWidth > 450
       ? (arrow.style.cssText =
-          "transform: rotateX(180deg) translateY(-1rem); transition: transform 0.5s;")
+          "transform: rotateX(180deg) translateY(-1rem); transition: transform 0.3s;")
       : (arrow.style.cssText =
-          "transform: rotateX(180deg) translateY(-1.6rem); transition: transform 0.5s;");
+          "transform: rotateX(180deg) translateY(-1.6rem); transition: transform 0.3s;");
   };
 
   const handleMouseOverDiv = (event) => {
     event.currentTarget.style.cssText =
-      "display: flex; animation: fade-in 0.5s forwards;";
+      "display: flex; animation: fade-in 0.3s forwards;";
   };
 
   const handleMouseOutAnchor = (event) => {
     event.currentTarget.lastElementChild.style.cssText =
-      "display: flex; animation: fade-out 0.5s forwards;";
+      "display: flex; animation: fade-out 0.3s forwards;";
     event.currentTarget.firstElementChild.nextElementSibling.style.cssText =
-      "transform: rotateX(0deg); transition: transform 0.5s;";
+      "transform: rotateX(0deg); transition: transform 0.3s;";
   };
 
   const handleMouseOutDiv = (event) => {
     event.currentTarget.style.cssText =
-      "display: flex; animation: fade-out 0.5s forwards;";
+      "display: flex; animation: fade-out 0.3s forwards;";
   };
 
   const handleOnClickAnchor = (event) => {
     if (event.currentTarget.lastElementChild.style.display === "flex") {
       event.currentTarget.style.cssText = "padding-bottom: 2rem;";
       event.currentTarget.lastElementChild.style.cssText =
-        "display: none; animation: fade-out 0.5s forwards;";
+        "display: none; animation: fade-out 0.3s forwards;";
       event.currentTarget.firstElementChild.nextElementSibling.style.cssText =
-        "transform: rotateX(0deg); transition: transform 0.5s;";
+        "transform: rotateX(0deg); transition: transform 0.3s;";
     } else {
       event.currentTarget.style.cssText = "padding-bottom: 0;";
       event.currentTarget.lastElementChild.style.cssText =
-        "display: flex; animation: fade-in 0.5s forwards;";
+        "display: flex; animation: fade-in 0.3s forwards;";
       const arrow = event.currentTarget.firstElementChild.nextElementSibling;
 
       window.innerWidth > 1000
         ? (arrow.style.cssText =
-            "transform: rotateX(180deg) translateY(-0.1rem); transition: transform 0.5s;")
+            "transform: rotateX(180deg) translateY(-0.1rem); transition: transform 0.3s;")
         : window.innerWidth <= 1000 && window.innerWidth > 600
         ? (arrow.style.cssText =
-            "transform: rotateX(180deg) translateY(-0.3rem); transition: transform 0.5s;")
+            "transform: rotateX(180deg) translateY(-0.3rem); transition: transform 0.3s;")
         : window.innerWidth <= 600 && window.innerWidth > 500
         ? (arrow.style.cssText =
-            "transform: rotateX(180deg) translateY(-0.7rem); transition: transform 0.5s;")
+            "transform: rotateX(180deg) translateY(-0.7rem); transition: transform 0.3s;")
         : window.innerWidth <= 500 && window.innerWidth > 450
         ? (arrow.style.cssText =
-            "transform: rotateX(180deg) translateY(-1rem); transition: transform 0.5s;")
+            "transform: rotateX(180deg) translateY(-1rem); transition: transform 0.3s;")
         : (arrow.style.cssText =
-            "transform: rotateX(180deg) translateY(-1.6rem); transition: transform 0.5s;");
+            "transform: rotateX(180deg) translateY(-1.6rem); transition: transform 0.3s;");
     }
   };
 
@@ -89,7 +89,7 @@ function Navigation() {
       navList.style.display === "flex"
     ) {
       navList.style.cssText =
-        "display: none; animation: fade-out 0.5s forwards;";
+        "display: none; animation: fade-out 0.3s forwards;";
     }
   });
 
@@ -113,7 +113,7 @@ function Navigation() {
         onMouseOut={window.innerWidth > 1000 ? handleMouseOutAnchor : null}
         onClick={window.innerWidth <= 1000 ? handleOnClickAnchor : null}
       >
-        <p>Services</p>
+        <p className="nav-list-item-heading">Services</p>
         <i className="fa-solid fa-chevron-down"></i>
 
         <div
@@ -182,7 +182,7 @@ function Navigation() {
         onMouseOut={window.innerWidth > 1000 ? handleMouseOutAnchor : null}
         onClick={window.innerWidth <= 1000 ? handleOnClickAnchor : null}
       >
-        <p>Learn</p>
+        <p className="nav-list-item-heading">Learn</p>
         <i className="fa-solid fa-chevron-down"></i>
 
         <div
@@ -272,17 +272,17 @@ function Navigation() {
       </li>
 
       <li className="nav-list-item">
-        <a href="social-impact" className="nav-link">
+        <a href="social-impact" className="nav-list-item-heading nav-link">
           Social Impact
         </a>
       </li>
 
       <li className="nav-list-item">
-        <p>Projects</p>
+        <p className="nav-list-item-heading">Projects</p>
       </li>
 
       <li className="nav-list-item">
-        <a href="about" className="nav-link">
+        <a href="about" className="nav-list-item-heading nav-link">
           About Noran
         </a>
       </li>
