@@ -20,7 +20,7 @@ function About() {
                 About Noran<span>.</span>
               </h1>
               <p className="drop-in-5">
-                WNoran is derived from “諾” (promise) and “然” (a state of
+                Noran is derived from “諾” (promise) and “然” (a state of
                 leisure). Our philosophy is to create impactful design solutions
                 for businesses while design a better tomorrow for our society.
               </p>
