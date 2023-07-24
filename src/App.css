@@ -411,6 +411,10 @@ header {
   margin-bottom: 0;
 }
 
+.nav-dropdown-item h3 img {
+  width: 2rem;
+}
+
 .nav-dropdown-item h3 span {
   display: flex;
   flex-direction: column;
@@ -774,8 +778,8 @@ header {
 }
 
 .home-section-2-interactive-card-2 {
-  top: 16.3rem;
-  left: 8.3rem;
+  top: 17.3rem;
+  left: 9.3rem;
   z-index: 10;
 }
 
@@ -1375,6 +1379,10 @@ header {
   gap: 1.6rem;
 }
 
+.about-section-1-card-highlight img {
+  width: 100%; 
+}
+
 #about-section-1-highlight-emoji-1 {
   width: 6.2933rem;
   height: 8rem;
@@ -1777,8 +1785,8 @@ footer {
   }
 
   .home-section-2-interactive-card-2 {
-    top: 13.3rem;
-    left: 6.65rem;
+    top: 14.3rem;
+    left: 7.65rem;
   }
 
   .home-section-2-interactive-card-3 {

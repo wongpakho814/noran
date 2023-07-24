@@ -3,11 +3,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import InfiniteRotation from "../InfiniteRotation";
 import CharityPartner from "../CharityPartner";
 import heroImg from "../../images/hero-img-plant.png";
-import treeIcon from "../../images/icons/🌲.svg";
-import forkIcon from "../../images/icons/🍴.svg";
-import waterDropIcon from "../../images/icons/💧.svg";
-import heartIcon from "../../images/icons/💚.svg";
-import leafEmoji from "../../images/leaf highlight emoji.png";
+import treeIcon from "../../images/icons/tree.svg";
+import forkIcon from "../../images/icons/cutlery.svg";
+import waterDropIcon from "../../images/icons/droplet.svg";
+import heartIcon from "../../images/icons/green-heart.svg";
+import leafEmoji from "../../images/icons/four-leaf-clover.svg";
 
 function SocialImpact() {
   return (

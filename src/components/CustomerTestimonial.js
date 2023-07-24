@@ -1,7 +1,7 @@
 import React from "react";
 import { useSwiper } from "swiper/react";
 import "swiper/css";
-import avatarImg from "../images/Sam Gilbert.png";
+import avatarImg from "../images/Avatar.png";
 import prevIconActivated from "../images/PreviousActivated.svg";
 import prevIconUnactivated from "../images/PreviousUnactivated.svg";
 import nextIconActivated from "../images/NextActivated.svg";

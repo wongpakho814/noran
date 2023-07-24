@@ -3,10 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import InfiniteRotation from "../InfiniteRotation";
 import TeamMember from "../TeamMember";
 import heroImg from "../../images/hero-img-plant.png";
-import award1 from "../../images/Best Webflow Website Design.svg";
-import award2 from "../../images/New-Business-Excellence-Awards.jpg";
-import award3 from "../../images/Top Creative Agencies in the UK.svg";
-import award4 from "../../images/UX Design Specialists of the Year.jpg";
+import award1 from "../../images/Best Webflow Website Design DesignRush.svg";
+import award2 from "../../images/Business Excellence Awards Acquisition International.png";
+import award3 from "../../images/Top Creative Agencies DesighRush.svg";
+import award4 from "../../images/SME Greater London Enterprise Awards.png";
 
 function About() {
   return (

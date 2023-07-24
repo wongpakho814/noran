@@ -3,22 +3,22 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import CustomerTestimonial from "../CustomerTestimonial";
 import InfiniteRotation from "../InfiniteRotation";
-import leafEmoji from "../../images/leaf highlight emoji.png";
-import earthEmoji from "../../images/earth highlight emoji.png";
+import leafEmoji from "../../images/icons/four-leaf-clover.svg";
+import earthEmoji from "../../images/icons/globe.svg";
 import image1 from "../../images/Frame 14177.png";
 import image2 from "../../images/Frame 14176.png";
-import searchIcon from "../../images/icons/🔍.svg";
-import chatIcon from "../../images/icons/💬️.svg";
-import bookIcon from "../../images/icons/📖.svg";
-import globeIcon from "../../images/icons/🌐.svg";
-import houseIcon from "../../images/icons/🏫.svg";
-import lightBulbIcon from "../../images/icons/💡.svg";
-import monitorIcon from "../../images/icons/🖥️.svg";
+import searchIcon from "../../images/icons/magnify.svg";
+import chatIcon from "../../images/icons/chat.svg";
+import bookIcon from "../../images/icons/book.svg";
+import globeIcon from "../../images/icons/web.svg";
+import houseIcon from "../../images/icons/school.svg";
+import lightBulbIcon from "../../images/icons/lightbulb.svg";
+import monitorIcon from "../../images/icons/desktop.svg";
 import heroImg from "../../images/hero-img-plant.png";
-import treeIcon from "../../images/icons/🌲.svg";
-import forkIcon from "../../images/icons/🍴.svg";
-import waterDropIcon from "../../images/icons/💧.svg";
-import heartIcon from "../../images/icons/💚.svg";
+import treeIcon from "../../images/icons/tree.svg";
+import forkIcon from "../../images/icons/cutlery.svg";
+import waterDropIcon from "../../images/icons/droplet.svg";
+import heartIcon from "../../images/icons/green-heart.svg";
 
 function Home() {
   return (
