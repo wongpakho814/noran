@@ -2163,7 +2163,7 @@ footer {
   }
 
   .about-section-1-content-wrapper {
-    height: 128rem;
+    height: 127.5rem;
   }
 
   .about-section-1-cards {
@@ -2515,19 +2515,11 @@ footer {
   }
 
   .about-section-1 {
-    height: 143rem;
+    height: 131rem;
   }
 
   .about-section-1-content-wrapper {
-    height: 139rem;
-  }
-
-  #about-section-1-highlight-emoji-1,
-  #about-section-1-highlight-emoji-2,
-  #about-section-1-highlight-emoji-3,
-  #about-section-1-highlight-emoji-4 {
-    width: max-content;
-    height: 11rem;
+    height: 127rem;
   }
 }
 
@@ -2580,21 +2572,6 @@ footer {
 
   .social-impact-section-2 {
     margin-top: 5rem;
-  }
-
-  .about-section-1 {
-    height: 147rem;
-  }
-
-  .about-section-1-content-wrapper {
-    height: 143rem;
-  }
-
-  #about-section-1-highlight-emoji-1,
-  #about-section-1-highlight-emoji-2,
-  #about-section-1-highlight-emoji-3,
-  #about-section-1-highlight-emoji-4 {
-    height: 12rem;
   }
 }
 
@@ -2671,21 +2648,6 @@ footer {
 
   .icon-wrapper:last-child i {
     width: 3.1rem;
-  }
-
-  .about-section-1 {
-    height: 156rem;
-  }
-
-  .about-section-1-content-wrapper {
-    height: 151.5rem;
-  }
-
-  #about-section-1-highlight-emoji-1,
-  #about-section-1-highlight-emoji-2,
-  #about-section-1-highlight-emoji-3,
-  #about-section-1-highlight-emoji-4 {
-    height: 14rem;
   }
 
   .footer-item a {
@@ -2770,11 +2732,11 @@ footer {
   }
 
   .about-section-1 {
-    height: 161rem;
+    height: 137.5rem;
   }
 
   .about-section-1-content-wrapper {
-    height: 157rem;
+    height: 133.5rem;
   }
 
   .about-section-1-cards {
@@ -2846,11 +2808,11 @@ footer {
   }
 
   .about-section-1 {
-    height: 166.5rem;
+    height: 142.5rem;
   }
 
   .about-section-1-content-wrapper {
-    height: 162rem;
+    height: 138.5rem;
   }
 
   .about-section-1-content-wrapper .home-section-3-hero-text {
