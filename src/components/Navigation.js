@@ -19,7 +19,7 @@ function Navigation() {
     window.innerWidth > 1000
       ? (arrow.style.cssText =
           "transform: rotateX(180deg) translateY(-0.1rem); transition: transform 0.3s;")
-      : window.innerWidth <= 1000 && window.innerWidth > 600 
+      : window.innerWidth <= 1000 && window.innerWidth > 600
       ? (arrow.style.cssText =
           "transform: rotateX(180deg) translateY(-0.3rem); transition: transform 0.3s;")
       : window.innerWidth <= 600 && window.innerWidth > 500
@@ -125,7 +125,7 @@ function Navigation() {
             <li className="nav-dropdown-item">
               <h3>
                 <img src={computerIcon} alt="UX Design & DesignOps"></img>
-                <span>UX Design & DesignOps</span>
+                <a href="uxdesign-service">UX Design & DesignOps</a>
               </h3>
               <p>Drive the best experience to your users</p>
             </li>
@@ -250,7 +250,9 @@ function Navigation() {
                     practical handbook to guide your process step-by-step!
                   </p>
                 </div>
-                <a href="udemy-course" className="udemy-btn">Start learning</a>
+                <a href="udemy-course" className="udemy-btn">
+                  Start learning
+                </a>
               </div>
             </div>
             <div className="blob"></div>

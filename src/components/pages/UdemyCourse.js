@@ -5,10 +5,13 @@ import lightBulbIcon from "../../images/icons/lightbulb.svg";
 function UdemyCourse() {
   return (
     <React.Fragment>
-      <section className="udemy-course-section-1 mobile-section drop-in-2" id="udemy-course">
+      <section
+        className="udemy-course-section-1 mobile-section drop-in-3"
+        id="udemy-course"
+      >
         <InfiniteRotation />
         <div className="udemy-course-section-1-wrapper">
-          <div className="udemy-course-section-1-left-column">
+          <div className="udemy-course-section-1-left-column drop-in-4">
             <h1>
               Learn DesignOps for free on Udemy<span>.</span>
             </h1>
@@ -28,7 +31,7 @@ function UdemyCourse() {
             </button>
           </div>
 
-          <div className="udemy-course-section-1-right-column">
+          <div className="udemy-course-section-1-right-column drop-in-5">
             <h2>
               Modules<span>.</span>
             </h2>

@@ -405,10 +405,6 @@ header {
   height: 2.4rem;
   align-items: center;
   gap: 1.6rem;
-  color: #252525;
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: normal;
   margin-bottom: 0;
 }
 
@@ -416,11 +412,13 @@ header {
   width: 2rem;
 }
 
+.nav-dropdown-item h3 a,
 .nav-dropdown-item h3 span {
   display: flex;
   flex-direction: column;
   flex: 1 0 0;
   color: var(--text, #333);
+  font-size: 2rem;
   font-weight: 500;
   line-height: 150%;
 }

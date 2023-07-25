@@ -49,7 +49,7 @@ function Footer() {
               Our Services<span>.</span>
             </div>
             <div className="footer-item">
-              <a href="#">UX Design & DesignOps</a>
+              <a href="uxdesign-service">UX Design & DesignOps</a>
             </div>
             <div className="footer-item">
               <a href="#">Editorial & Print Design</a>
@@ -85,7 +85,7 @@ function Footer() {
               </a>
             </div>
             <div className="footer-item">
-              <a href="#">Free DesignOps Course on Udemy</a>
+              <a href="udemy-course">Free DesignOps Course on Udemy</a>
             </div>
             <div className="footer-item">
               <a href="#">Industry Insights</a>
