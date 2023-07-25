@@ -153,7 +153,7 @@ function Navigation() {
             <li className="nav-dropdown-item">
               <h3>
                 <img src={globeIcon} alt="Web Development & Hosting"></img>
-                <span>Web Development & Hosting</span>
+                <a href="web-development-service">Web Development & Hosting</a>
               </h3>
               <p>Communicate your vision with an eye-catching website</p>
             </li>
