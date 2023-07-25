@@ -52,7 +52,7 @@ function Footer() {
               <a href="uxdesign-service">UX Design & DesignOps</a>
             </div>
             <div className="footer-item">
-              <a href="#">Editorial & Print Design</a>
+              <a href="editorial-service">Editorial & Print Design</a>
             </div>
             <div className="footer-item">
               <a href="#">Product Management</a>

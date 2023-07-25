@@ -146,7 +146,7 @@ function Navigation() {
             <li className="nav-dropdown-item">
               <h3>
                 <img src={bookIcon} alt="Editorial & Print Design"></img>
-                <span>Editorial & Print Design</span>
+                <a href="editorial-service">Editorial & Print Design</a>
               </h3>
               <p>Well laid-out digital and print publications</p>
             </li>
