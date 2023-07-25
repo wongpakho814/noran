@@ -55,7 +55,7 @@ function Footer() {
               <a href="editorial-service">Editorial & Print Design</a>
             </div>
             <div className="footer-item">
-              <a href="#">Product Management</a>
+              <a href="product-management-service">Product Management</a>
             </div>
             <div className="footer-item">
               <a href="#">Website / UI Audit</a>

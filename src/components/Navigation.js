@@ -167,7 +167,7 @@ function Navigation() {
             <li className="nav-dropdown-item">
               <h3>
                 <img src={lightBulbIcon} alt="Product Management"></img>
-                <span>Product Management</span>
+                <a href="product-management-service">Product Management</a>
               </h3>
               <p>Launch industry-leading features strategically</p>
             </li>
