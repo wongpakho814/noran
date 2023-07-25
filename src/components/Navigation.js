@@ -139,7 +139,7 @@ function Navigation() {
             <li className="nav-dropdown-item">
               <h3>
                 <img src={chatIcon} alt="Consulting"></img>
-                <span>Consulting</span>
+                <a href="consulting-service">Consulting</a>
               </h3>
               <p>Create the right solution based on your goals</p>
             </li>

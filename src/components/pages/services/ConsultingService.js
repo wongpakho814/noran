@@ -2,31 +2,29 @@ import React from "react";
 import InfiniteRotation from "../../InfiniteRotation";
 import lightBulbIcon from "../../../images/icons/lightbulb.svg";
 
-function WebDevelopmentService() {
+function ConsultingService() {
   return (
     <React.Fragment>
       <section
         className="udemy-course-section-1 mobile-section drop-in-3"
-        id="web-development-service"
+        id="consulting-service"
       >
         <InfiniteRotation />
         <div className="udemy-course-section-1-wrapper">
           <div className="udemy-course-section-1-left-column drop-in-4">
             <h1>
-              Web Development & Hosting<span>.</span>
+              Consulting<span>.</span>
             </h1>
             <p>
-              Do you want a professional team to manage all your content updates
-              and keep you hassle-free? Or do you want to be self-sustain and
-              manage your website but don’t know where to start? <br></br>
-              <br></br> We’re here to support both scenarios. Our team aims to
-              give you direct control and transparency of your website for
-              strategic planning and drive growth with our unique web
-              development and hosting plan. <br></br>
-              <br></br> ⏰ Depends on scope | 💰 Minimum GBP£1,000
+              With 4 years of experience in design and management, our team can
+              help you and your team create better design solutions, improve the
+              design process and achieve greater results. <br></br>
+              <br></br> A perfect fit for companies that need a design expert to
+              consult with and make the right design decisions. <br></br>
+              <br></br> Online or offline | 💰 GBP£120/h
             </p>
             <button className="lets-talk-btn learn-to-optimise">
-              Audit your website with us
+              Consult with us
             </button>
           </div>
 
@@ -37,10 +35,10 @@ function WebDevelopmentService() {
             <div className="udemy-course-section-1-card">
               <img src={lightBulbIcon} alt="Module 1: What’s DesignOps?"></img>
               <div className="udemy-course-section-1-card-text">
-                <h3>Domain Privacy & Security</h3>
+                <h3>Frameworks & Resources</h3>
                 <p>
-                  We manage your domain renewal, WHOIS identity protection,
-                  malware scan, and scam prevention.
+                  We’ll provide the practical frameworks and resources to guide
+                  the direction of your team.
                 </p>
               </div>
             </div>
@@ -48,10 +46,10 @@ function WebDevelopmentService() {
             <div className="udemy-course-section-1-card">
               <img src={lightBulbIcon} alt="Module 1: What’s DesignOps?"></img>
               <div className="udemy-course-section-1-card-text">
-                <h3>Data Analytics</h3>
+                <h3>Customised Solution</h3>
                 <p>
-                  We’ll create an analytics dashboard to view your website
-                  metrics and craft your web strategy based on the analysis.
+                  Based on your key concerns and business goals, we’ll
+                  customised a comprehensive action plan for you.
                 </p>
               </div>
             </div>
@@ -59,10 +57,10 @@ function WebDevelopmentService() {
             <div className="udemy-course-section-1-card">
               <img src={lightBulbIcon} alt="Module 1: What’s DesignOps?"></img>
               <div className="udemy-course-section-1-card-text">
-                <h3>24/7 Support & Trainings</h3>
+                <h3>Organised Notes</h3>
                 <p>
-                  A dedicated channel will be created for instant support to
-                  your team and customised video tutorials to guide your need.
+                  By the end of each session, we’ll share you the summary and
+                  action items so you don’t missed any important topics.
                 </p>
               </div>
             </div>
@@ -73,4 +71,4 @@ function WebDevelopmentService() {
   );
 }
 
-export default WebDevelopmentService;
+export default ConsultingService;

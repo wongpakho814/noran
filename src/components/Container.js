@@ -8,6 +8,7 @@ import EditorialService from "./pages/services/EditorialService";
 import ProductManagementService from "./pages/services/ProductManagementService";
 import UIAuditService from "./pages/services/UIAuditService";
 import WebDevelopmentService from "./pages/services/WebDevelopmentService";
+import ConsultingService from "./pages/services/ConsultingService";
 import UdemyCourse from "./pages/UdemyCourse";
 import SocialImpact from "./pages/SocialImpact";
 import Projects from "./pages/Projects";
@@ -31,6 +32,7 @@ export default function PortfolioContainer() {
             path="/web-development-service"
             element={<WebDevelopmentService />}
           />
+          <Route path="/consulting-service" element={<ConsultingService />} />
           <Route path="/udemy-course" element={<UdemyCourse />} />
           <Route path="/social-impact" element={<SocialImpact />} />
           <Route path="/projects" element={<Projects />} />
