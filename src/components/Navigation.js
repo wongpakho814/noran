@@ -132,7 +132,7 @@ function Navigation() {
             <li className="nav-dropdown-item">
               <h3>
                 <img src={searchIcon} alt="Website / UI Audit"></img>
-                <span>Website / UI Audit</span>
+                <a href="UI-audit-service">Website / UI Audit</a>
               </h3>
               <p>Small improvements to create a great impact</p>
             </li>
