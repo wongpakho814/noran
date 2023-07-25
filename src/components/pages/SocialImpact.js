@@ -12,7 +12,10 @@ import leafEmoji from "../../images/icons/four-leaf-clover.svg";
 function SocialImpact() {
   return (
     <React.Fragment>
-      <section className="social-impact-section-1 drop-in-2" id="social-impact">
+      <section
+        className="social-impact-section-1 mobile-section drop-in-2"
+        id="social-impact"
+      >
         <div className="home-section-3-content-wrapper">
           <InfiniteRotation />
           <div className="home-section-3-hero">
@@ -86,7 +89,10 @@ function SocialImpact() {
         </div>
       </section>
 
-      <section className="social-impact-section-2" id="social-commitment">
+      <section
+        className="social-impact-section-2 mobile-section"
+        id="social-commitment"
+      >
         <h1>
           Our commitment<span>.</span>
         </h1>
@@ -141,7 +147,10 @@ function SocialImpact() {
         </div>
       </section>
 
-      <section className="social-impact-section-3" id="charity-partners">
+      <section
+        className="social-impact-section-3 mobile-section"
+        id="charity-partners"
+      >
         <div className="social-impact-section-3-left-column">
           <h1>
             Our charity partners<span>.</span>

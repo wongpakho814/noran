@@ -250,7 +250,7 @@ function Navigation() {
                     practical handbook to guide your process step-by-step!
                   </p>
                 </div>
-                <button className="udemy-btn">Start learning</button>
+                <a href="udemy-course" className="udemy-btn">Start learning</a>
               </div>
             </div>
             <div className="blob"></div>

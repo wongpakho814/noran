@@ -23,7 +23,7 @@ import heartIcon from "../../images/icons/green-heart.svg";
 function Home() {
   return (
     <React.Fragment>
-      <section className="home-section-1 drop-in-2" id="home">
+      <section className="home-section-1 mobile-section drop-in-2" id="home">
         <div className="home-section-1-content">
           <InfiniteRotation />
           <h1 className="drop-in-4">
@@ -117,7 +117,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="home-section-2 drop-in-5">
+      <section className="home-section-2 mobile-section drop-in-5">
         <div className="home-section-2-content-wrapper">
           <div className="home-section-2-interactive">
             <div className="home-section-2-interactive-card home-section-2-interactive-card-1">
@@ -186,7 +186,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="home-section-3">
+      <section className="home-section-3 mobile-section">
         <div className="home-section-3-content-wrapper">
           <InfiniteRotation />
           <div className="home-section-3-hero">
@@ -257,7 +257,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="home-section-4">
+      <section className="home-section-4 mobile-section">
         <div className="home-section-4-text">
           <h1>
             Our clients stay with us<span>.</span>

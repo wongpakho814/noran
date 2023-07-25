@@ -11,7 +11,7 @@ import award4 from "../../images/SME Greater London Enterprise Awards.png";
 function About() {
   return (
     <React.Fragment>
-      <section className="about-section-1 drop-in-2" id="about">
+      <section className="about-section-1 mobile-section drop-in-2" id="about">
         <div className="about-section-1-content-wrapper">
           <InfiniteRotation />
           <div className="home-section-3-hero">
@@ -90,7 +90,7 @@ function About() {
         </div>
       </section>
 
-      <section className="about-section-2">
+      <section className="about-section-2 mobile-section">
         <div className="social-impact-section-3-left-column">
           <h1>
             Our Team<span>.</span>

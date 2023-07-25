@@ -5,7 +5,7 @@ import CtaBox from "./CtaBox";
 function Footer() {
   return (
     <footer>
-      <div className="footer-columns">
+      <div className="footer-columns mobile-section">
         <div className="footer-area-1">
           <div className="footer-column footer-column-1">
             <div className="logo-wrapper">
@@ -114,7 +114,9 @@ function Footer() {
               <a href="/about#about-noran-awards">Our Awards & Recognitions</a>
             </div>
             <div className="footer-item">
-              <a href="/social-impact#social-commitment">Our Social Commitment</a>
+              <a href="/social-impact#social-commitment">
+                Our Social Commitment
+              </a>
             </div>
             <div className="footer-item">
               <a href="/social-impact#charity-partners">Our Charity Partners</a>

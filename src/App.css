@@ -80,13 +80,14 @@ dl {
 .lets-talk-btn:hover {
   text-decoration: none;
   color: #fff;
-  background: var(--tertiary, #1C4B34);
+  background: var(--tertiary, #1c4b34);
 }
 
 .our-services,
 .our-social-commitment,
 .our-case-studies,
-.work-with-us {
+.work-with-us,
+.learn-to-optimise {
   padding: 2.4rem 4rem;
   font-size: 2rem;
   line-height: 120%;
@@ -167,7 +168,7 @@ dl {
 .udemy-btn:hover {
   text-decoration: none;
   color: #fff !important;
-  background: var(--tertiary, #1C4B34);
+  background: var(--tertiary, #1c4b34);
 }
 
 .cta-text {
@@ -254,7 +255,7 @@ dl {
 }
 
 .next-btn img:hover,
-.prev-btn img:hover { 
+.prev-btn img:hover {
   animation: btn-fade-in 0.3s forwards;
 }
 
@@ -1380,7 +1381,7 @@ header {
 }
 
 .about-section-1-card-highlight img {
-  width: 100%; 
+  width: 100%;
 }
 
 #about-section-1-highlight-emoji-1 {
@@ -1446,6 +1447,116 @@ header {
 }
 /* End of about noran section 1 */
 /* End of about noran */
+
+/* Udemy Course */
+/* Udemy course section 1 */
+.udemy-course-section-1 {
+  width: 100%;
+  display: flex;
+  padding: 6.4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.udemy-course-section-1-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.udemy-course-section-1-left-column,
+.udemy-course-section-1-right-column {
+  width: 63.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.2rem;
+}
+
+.udemy-course-section-1-left-column h1,
+.udemy-course-section-1-left-column p {
+  color: var(--text, #333);
+  font-family: Outfit;
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.udemy-course-section-1-left-column h1 span {
+  color: #457d61;
+}
+
+.udemy-course-section-1-left-column p {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.udemy-course-section-1-right-column {
+  gap: 1.6rem;
+}
+
+.udemy-course-section-1-right-column h2 {
+  color: var(--text, #333);
+  font-family: Outfit;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.048rem;
+}
+
+.udemy-course-section-1-right-column h2 span {
+  color: #457d61;  
+}
+
+.udemy-course-section-1-card {
+  width: 100%;  
+  display: flex;
+  padding: 2.4rem;
+  align-items: center;
+  gap: 2.4rem;
+  border-radius: 1.6rem;
+  background: var(--mid-bg, #f4f4f4);
+}
+
+.udemy-course-section-1-card:nth-child(odd) {
+  background: var(--secondary, #d6ebdc);
+}
+
+.udemy-course-section-1-card img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.udemy-course-section-1-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.udemy-course-section-1-card-text h3,
+.udemy-course-section-1-card-text p {
+  color: var(--text, #333);
+  font-family: Outfit;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.udemy-course-section-1-card-text p {
+  font-weight: 400;
+  line-height: 140%;
+}
+/* End of udemy course section 1 */
+/* End of udemy course */
 
 /* Footer */
 footer {
@@ -1831,8 +1942,10 @@ footer {
     font-size: 4.8rem;
   }
 
-  .home-section-3-content-wrapper .infinite-rotation-wrapper
-  .about-section-1-content-wrapper .infinite-rotation-wrapper {
+  .home-section-3-content-wrapper
+    .infinite-rotation-wrapper
+    .about-section-1-content-wrapper
+    .infinite-rotation-wrapper {
     top: 5.45rem;
     right: 6.23rem;
     z-index: 202;
@@ -1857,6 +1970,15 @@ footer {
   .home-section-4-card,
   .social-impact-section-3-right-column {
     height: 52.5rem;
+  }
+
+  .udemy-course-section-1-wrapper {
+    flex-direction: column;
+  }
+
+  .udemy-course-section-1-left-column,
+  .udemy-course-section-1-right-column {
+    width: 100%;
   }
 }
 
@@ -2444,16 +2566,7 @@ footer {
     font-size: 2rem;
   }
 
-  .home-section-1,
-  .home-section-2,
-  .home-section-3,
-  .home-section-4,
-  .social-impact-section-1,
-  .social-impact-section-2,
-  .social-impact-section-3,
-  .about-section-1,
-  .about-section-2,
-  .footer-columns {
+  .mobile-section {
     padding: 4rem 2rem 0 2rem;
   }
 
