@@ -67,7 +67,7 @@ function Footer() {
               <a href="consulting-service">Consulting</a>
             </div>
             <div className="footer-item">
-              <a href="#">Design Workshops & Training</a>
+              <a href="design-workshops-service">Design Workshops & Training</a>
             </div>
           </div>
 

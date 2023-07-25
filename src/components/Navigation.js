@@ -160,7 +160,7 @@ function Navigation() {
             <li className="nav-dropdown-item">
               <h3>
                 <img src={houseIcon} alt="Design Workshops & Training"></img>
-                <span>Design Workshops & Training</span>
+                <a href="design-workshops-service">Design Workshops & Training</a>
               </h3>
               <p>Improve your team’s design knowledge</p>
             </li>
