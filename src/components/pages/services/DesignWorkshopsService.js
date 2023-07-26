@@ -26,7 +26,7 @@ function DesignWorkshopsService() {
               <br></br> ⏰ 1-2 Days | 💰 GBP£1,500
             </p>
             <button className="lets-talk-btn learn-to-optimise">
-              Consult with us
+              Reach your goals with us
             </button>
           </div>
 

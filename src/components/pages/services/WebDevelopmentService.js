@@ -26,7 +26,7 @@ function WebDevelopmentService() {
               <br></br> ⏰ Depends on scope | 💰 Minimum GBP£1,000
             </p>
             <button className="lets-talk-btn learn-to-optimise">
-              Audit your website with us
+              Get a professional website
             </button>
           </div>
 

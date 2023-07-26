@@ -402,6 +402,11 @@ header {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+  transition: transform 0.3s;
+}
+
+.nav-dropdown-item:hover {
+  transform: translateY(-1rem);  
 }
 
 .nav-dropdown-item:last-child() {
