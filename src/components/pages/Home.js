@@ -21,6 +21,38 @@ import waterDropIcon from "../../images/icons/droplet.svg";
 import heartIcon from "../../images/icons/green-heart.svg";
 
 function Home() {
+  if (window.innerWidth > 1000) {
+    window.addEventListener("mousemove", (event) => {
+      const customCursor = document.querySelector(".custom-cursor");
+      const r = document.querySelector(":root");
+      const oddCards = document.querySelectorAll(".odd-cards");
+      const evenCards = document.querySelectorAll(".even-cards");
+
+      customCursor.style.top = `${event.clientY}px`;
+      customCursor.style.left = `${event.clientX}px`;
+
+      oddCards.forEach((card) => {
+        card.addEventListener("mouseover", () => {
+          customCursor.classList.add("zoom");
+          r.style.setProperty("--bubble-color", "#f4f4f4");
+        });
+        card.addEventListener("mouseout", () => {
+          customCursor.classList.remove("zoom");
+        });
+      });
+
+      evenCards.forEach((card) => {
+        card.addEventListener("mouseover", () => {
+          customCursor.classList.add("zoom");
+          r.style.setProperty("--bubble-color", "#d6ebdc");
+        });
+        card.addEventListener("mouseout", () => {
+          customCursor.classList.remove("zoom");
+        });
+      });
+    });
+  }
+
   return (
     <React.Fragment>
       <section className="home-section-1 mobile-section drop-in-2" id="home">
@@ -120,54 +152,75 @@ function Home() {
       <section className="home-section-2 mobile-section drop-in-5">
         <div className="home-section-2-content-wrapper">
           <div className="home-section-2-interactive">
-            <div className="home-section-2-interactive-card home-section-2-interactive-card-1">
+            <a
+              href="uxdesign-service"
+              className="home-section-2-interactive-card home-section-2-interactive-card-1 odd-cards drop-in-3"
+            >
               <div className="home-section-2-interactive-card-emoji">
                 <img src={searchIcon} alt="Website / UI Audit"></img>
               </div>
               <p>Website / UI Audit</p>
-            </div>
+            </a>
 
-            <div className="home-section-2-interactive-card home-section-2-interactive-card-2">
+            <a
+              href="design-workshops-service"
+              className="home-section-2-interactive-card home-section-2-interactive-card-2 even-cards drop-in-4"
+            >
               <div className="home-section-2-interactive-card-emoji">
                 <img src={houseIcon} alt="Design Workshops & Trainings"></img>
               </div>
               <p>Design Workshops & Trainings</p>
-            </div>
+            </a>
 
-            <div className="home-section-2-interactive-card home-section-2-interactive-card-3">
+            <a
+              href="consulting-service"
+              className="home-section-2-interactive-card home-section-2-interactive-card-3 odd-cards drop-in-5"
+            >
               <div className="home-section-2-interactive-card-emoji">
                 <img src={chatIcon} alt="Consulting"></img>
               </div>
               <p>Consulting</p>
-            </div>
+            </a>
 
-            <div className="home-section-2-interactive-card home-section-2-interactive-card-4">
+            <a
+              href="product-management-service"
+              className="home-section-2-interactive-card home-section-2-interactive-card-4 even-cards drop-in-6"
+            >
               <div className="home-section-2-interactive-card-emoji">
                 <img src={lightBulbIcon} alt="Product Management"></img>
               </div>
               <p>Product Management</p>
-            </div>
+            </a>
 
-            <div className="home-section-2-interactive-card home-section-2-interactive-card-5">
+            <a
+              href="web-development-service"
+              className="home-section-2-interactive-card home-section-2-interactive-card-5 odd-cards drop-in-7"
+            >
               <div className="home-section-2-interactive-card-emoji">
                 <img src={globeIcon} alt="Web Development & Hosting"></img>
               </div>
               <p>Web Development & Hosting</p>
-            </div>
+            </a>
 
-            <div className="home-section-2-interactive-card home-section-2-interactive-card-6">
+            <a
+              href="editorial-service"
+              className="home-section-2-interactive-card home-section-2-interactive-card-6 even-cards drop-in-2"
+            >
               <div className="home-section-2-interactive-card-emoji">
                 <img src={bookIcon} alt="Editorial & Print Design"></img>
               </div>
               <p>Editorial & Print Design</p>
-            </div>
+            </a>
 
-            <div className="home-section-2-interactive-card home-section-2-interactive-card-7">
+            <a
+              href="uxdesign-service"
+              className="home-section-2-interactive-card home-section-2-interactive-card-7 odd-cards drop-in-1"
+            >
               <div className="home-section-2-interactive-card-emoji">
                 <img src={monitorIcon} alt="UX Design & DesignOps"></img>
               </div>
               <p>UX Design & DesignOps</p>
-            </div>
+            </a>
           </div>
 
           <div className="home-section-2-text-content">

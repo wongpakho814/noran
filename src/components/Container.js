@@ -14,6 +14,7 @@ import UdemyCourse from "./pages/UdemyCourse";
 import SocialImpact from "./pages/SocialImpact";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
+import IndustryInsights from "./pages/IndustryInsights";
 
 export default function PortfolioContainer() {
   return (
@@ -42,9 +43,11 @@ export default function PortfolioContainer() {
           <Route path="/social-impact" element={<SocialImpact />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
+          <Route path="/industry-insights" element={<IndustryInsights />} />
         </Routes>
         <Footer />
       </BrowserRouter>
+      <div className="custom-cursor"></div>
     </div>
   );
 }

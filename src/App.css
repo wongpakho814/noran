@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* Reset and common styles */
+:root {
+  --bubble-color: #f4f4f4;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -296,6 +300,10 @@ dl {
 
 .drop-in-6 {
   animation: drop-in 2s ease 1400ms backwards;
+}
+
+.drop-in-7 {
+  animation: drop-in 2.2s ease 1600ms backwards;
 }
 
 @keyframes drop-in {
@@ -754,8 +762,16 @@ header {
   background: var(--mid-bg, #f4f4f4);
 }
 
+.home-section-2-interactive-card:nth-child(odd):hover {
+  background: var(--mid-bg, #d6ebdc);
+}
+
 .home-section-2-interactive-card:nth-child(even) {
   background: var(--secondary, #d6ebdc);
+}
+
+.home-section-2-interactive-card:nth-child(even):hover {
+  background: var(--secondary, #f4f4f4);
 }
 
 .home-section-2-interactive-card {
@@ -769,6 +785,41 @@ header {
   align-items: center;
   border-radius: 30rem;
   gap: 2.4rem;
+  cursor: none;  
+  transition: all 0.3s;
+}
+
+.home-section-2-interactive-card:hover {
+  text-decoration: none;  
+}
+
+.custom-cursor {
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2000;
+  transition: transform 0.3s;
+}
+
+.custom-cursor::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  top: -0.8rem;
+  left: -0.8rem;
+  background-color: var(--bubble-color);
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.custom-cursor.zoom {
+  transform: scale(4);
+  opacity: 1;
 }
 
 .home-section-2-interactive-card-1 {
@@ -1509,11 +1560,11 @@ header {
 }
 
 .udemy-course-section-1-right-column h2 span {
-  color: #457d61;  
+  color: #457d61;
 }
 
 .udemy-course-section-1-card {
-  width: 100%;  
+  width: 100%;
   display: flex;
   padding: 2.4rem;
   align-items: center;

@@ -88,7 +88,7 @@ function Footer() {
               <a href="udemy-course">Free DesignOps Course on Udemy</a>
             </div>
             <div className="footer-item">
-              <a href="#">Industry Insights</a>
+              <a href="industry-insights">Industry Insights</a>
             </div>
             <div className="footer-item coming-soon">
               <a href="#">Referral Program</a>
